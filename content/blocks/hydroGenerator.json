@@ -1,0 +1,24 @@
+{
+  "hydro-generator": {
+    "type": "powerGenerator",
+    "localizedName": "Гидро Генератор",
+    "description": "Генератор энергии, работающий от окружающей воды. Производство мощности зависит от глубины ячейки и количества соседних водных ячеек.",
+    "size": 4,
+    "health": 1200,
+    "powerProduction": 2000,
+    "envBoost": {
+      "water": 1.0
+    },
+    "requirements": {
+      "copper": 120,
+      "lead": 80,
+      "graphite": 40,
+      "titanium": 20
+    },
+    "category": "power",
+    "hasPower": true,
+    "canOverdrive": false,
+    "itemCapacity": 0,
+    "liquidCapacity": 0
+  }
+}
