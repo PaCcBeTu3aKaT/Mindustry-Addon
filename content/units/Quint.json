@@ -1,0 +1,60 @@
+{
+    "type": "flying",
+    "localizedName": "Квинта",
+    "description": "Мощный летающий юнит с продвинутыми возможностями строительства и добычи.",
+    "health": 5200,
+    "armor": 15,
+    "speed": 1.0,
+    "accel": 0.08,
+    "drag": 0.03,
+    "flying": true,
+    "mineSpeed": 8.0,
+    "mineTier": 4,
+    "buildSpeed": 5.0,
+    "itemCapacity": 60,
+    "engineSize": 4.0,
+    "engineOffset": 12.0,
+    "hitSize": 16.0,
+    "rotateSpeed": 5.0,
+    "weapons": [
+      {
+        "name": "navanax-cannon",
+        "x": 10.0,
+        "y": 8.0,
+        "mirror": true,
+        "shootY": 2.0,
+        "reload": 30.0,
+        "inaccuracy": 5.0,
+        "rotate": false,
+        "shootSound": "shoot",
+        "bullet": {
+          "type": "EmpBulletType",
+          "damage": 60,
+          "speed": 4.0,
+          "lifetime": 30.0,
+          "width": 6.0,
+          "height": 12.0,
+        }
+      },
+      {
+        "name": "poly-blaster",
+        "x": 6.0,
+        "y": -6.0,
+        "mirror": true,
+        "shootY": 2.0,
+        "reload": 15.0,
+        "inaccuracy": 3.0,
+        "rotate": false,
+        "shootSound": "shoot",
+        "bullet": {
+          "type": "MissileBulletType",
+          "damage": 20,
+          "speed": 5.0,
+          "lifetime": 20.0,
+          "width": 4.0,
+          "height": 8.0,
+        }
+      }
+    ]
+  }
+}
