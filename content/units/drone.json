@@ -8,7 +8,6 @@
     "speed": 1.2,
     "accel": 0.08,
     "drag": 0.03,
-    "flying": true,
     "mineSpeed": 10.0,
     "mineTier": 4,
     "buildSpeed": 5.5,
@@ -26,7 +25,7 @@
         "shootY": 2.0,
         "reload": 20.0,
         "inaccuracy": 5.0,
-        "rotate": false,
+        "rotate": true,
         "shootSound": "shoot",
         "bullet": {
           "type": "basic",
