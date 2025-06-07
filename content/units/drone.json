@@ -5,7 +5,7 @@
     "description": "Летающий дрон с мощным вооружением, способный добывать торий и строить с высокой скоростью.",
     "health": 4200,
     "armor": 10,
-    "speed": 1.2,
+    "speed": 1.5,
     "accel": 0.08,
     "drag": 0.03,
     "mineSpeed": 10.0,
@@ -14,7 +14,7 @@
     "itemCapacity": 50,
     "engineSize": 4.0,
     "engineOffset": 12.0,
-    "hitSize": 16.0,
+    "hitSize": 20.0,
     "rotateSpeed": 5.0,
     "weapons": [
       {
