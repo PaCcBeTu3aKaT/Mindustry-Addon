@@ -10,7 +10,7 @@
     "drag": 0.03,
     "mineSpeed": 8.0,
     "mineTier": 4,
-    "buildSpeed": 5
+    "buildSpeed": 4
     "itemCapacity": 100,
     "engineSize": 4.0,
     "engineOffset": 12.0,
