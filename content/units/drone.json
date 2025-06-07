@@ -1,14 +1,14 @@
 {
     "type": "flying",
-    "localizedName": "Продвинутый Дрон",
+    "localizedName": "Кварта",
     "description": "Летающий дрон с мощным вооружением, способный добывать торий и строить с высокой скоростью.",
-    "health": 4200,
+    "health": 2200,
     "armor": 10,
     "flying": true,
-    "speed": 4.5,
+    "speed": 3.5,
     "accel": 0.08,
     "drag": 0.03,
-    "mineSpeed": 10.0,
+    "mineSpeed": 8.0,
     "mineTier": 4,
     "buildSpeed": 6
     "itemCapacity": 100,
@@ -29,13 +29,12 @@
         "shootSound": "shoot",
         "bullet": {
           "type": "LaserBoltBulletType",
-          "damage": 40,
+          "damage": 30,
           "speed": 4.0,
           "lifetime": 40.0,
           "width": 2.0,
-          "height": 6.0,
-          "healPercent": 3.0,
-          "despawnEffect": "none"
+          "height": 9.0,
+          "healPercent": 3.0
         }
       },
       {
@@ -50,15 +49,14 @@
         "shootSound": "laser",
         "bullet": {
           "type": "LaserBulletType",
-          "damage": 200,
+          "damage": 180,
           "length": 120.0,
           "width": 4.0,
           "lifetime": 30.0,
           "pierce": true,
           "pierceCap": 10,
           "collides": true,
-          "hittable": true,
-          "despawnEffect": "none"
+          "hittable": true
         }
       }
     ]
