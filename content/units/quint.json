@@ -33,6 +33,7 @@
           "splashDamage": 70
           "lightRadius": 70
           "clipSize": 250
+          "splashDamageRadius": "rad"
           "speed": 4.0,
           "lifetime": 30.0,
           "width": 6.0,
