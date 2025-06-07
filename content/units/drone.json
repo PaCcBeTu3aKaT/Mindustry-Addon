@@ -1,8 +1,8 @@
 {
     "type": "flying",
     "localizedName": "Кварта",
-    "description": "Летающий дрон с мощным вооружением, способный добывать торий и строить с высокой скоростью.",
-    "health": 2200,
+    "description": "Летающий юнит с мощным вооружением, способный добывать торий и строить с высокой скоростью.",
+    "health": 1800,
     "armor": 10,
     "flying": true,
     "speed": 3.5,
@@ -10,7 +10,7 @@
     "drag": 0.03,
     "mineSpeed": 8.0,
     "mineTier": 4,
-    "buildSpeed": 6
+    "buildSpeed": 5
     "itemCapacity": 100,
     "engineSize": 4.0,
     "engineOffset": 12.0,
@@ -26,7 +26,7 @@
         "reload": 20.0,
         "inaccuracy": 5.0,
         "rotate": true,
-        "shootSound": "shoot",
+        "shootSound": "lasershoot",
         "bullet": {
           "type": "LaserBoltBulletType",
           "damage": 30,
@@ -34,7 +34,7 @@
           "lifetime": 40.0,
           "width": 2.0,
           "height": 9.0,
-          "healPercent": 3.0
+          "healPercent": 10.0
         }
       },
       {
