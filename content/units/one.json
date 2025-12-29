@@ -1,0 +1,33 @@
+type: legs
+name: "Жук-разведчик"
+description: "Быстрый органический юнит. Передвигается на четырех лапах, игнорируя препятствия."
+speed: 0.9
+drag: 0.1
+hitSize: 8
+health: 180
+armor: 2
+# Настройка ног (важно для визуала жука)
+legCount: 4
+legLength: 9
+legForwardScl: 0.6
+legMoveSpace: 1.2
+hovering: true # Визуально парит или идет высоко
+
+weapons: [
+  {
+    name: "beetle-mandibles" # Оружие — челюсти (нужен спрайт или используй стандарт)
+    reload: 20
+    x: 0
+    y: 2
+    mirror: false
+    shootSound: slap # Звук удара/шлепка
+    bullet: {
+      type: SapBulletType # Тип пули «высасывание» (органично для жуков)
+      damage: 15
+      sapStrength: 0.5 # Лечит себя при ударе
+      length: 40
+      width: 0.4
+      color: bf92f9 # Цвет «крови» или энергии жуков
+    }
+  }
+]
