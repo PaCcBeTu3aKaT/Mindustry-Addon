@@ -1,0 +1,76 @@
+{
+  "type": "legs",
+  "name": "Регина",
+  "description": "Вершина эволюции жуков. Огромное существо, постоянно производящее новых особей. Имеет колоссальный запас здоровья.",
+  "speed": 0.35,
+  "drag": 0.2,
+  "hitSize": 42,
+  "health": 20000,
+  "armor": 0,
+  "legCount": 8,
+  "legLength": 45,
+  "legForwardScl": 0.6,
+  "legMoveSpace": 1.1,
+  "hovering": true,
+  "rotateSpeed": 1.0,
+  "allowLegStep": true,
+
+  "weapons": [
+    {
+      "name": "regina-appendage",
+      "top": true,
+      "y": 5,
+      "x": 16,
+      "mirror": true,
+      "reload": 40,
+      "rotate": true,
+      "shootSound": "sap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 40,
+        "speed": 5,
+        "lifetime": 40,
+        "width": 12,
+        "height": 14,
+        "frontColor": "bf92f9",
+        "backColor": "7d58a5",
+        "status": "sapped",
+        "statusDuration": 200
+      }
+    },
+
+    {
+      "name": "regina-spawn-t1",
+      "reload": 3600,
+      "mirror": false,
+      "x": 0,
+      "y": 0,
+      "shootEffect": "none",
+      "smokeEffect": "none",
+      "shootSound": "respawn",
+      "bullet": {
+        "type": "BulletType",
+        "spawnUnit": "cicindela", 
+        "spawnCount": 2,
+        "lifetime": 1
+      }
+    },
+
+    {
+      "name": "regina-spawn-t2",
+      "reload": 5400,
+      "mirror": false,
+      "x": 0,
+      "y": -5,
+      "shootEffect": "none",
+      "smokeEffect": "none",
+      "shootSound": "respawn",
+      "bullet": {
+        "type": "BulletType",
+        "spawnUnit": "greblyak",
+        "spawnCount": 1,
+        "lifetime": 1
+      }
+    }
+  ]
+}
