@@ -1,0 +1,42 @@
+{
+  "type": "flying",
+  "name": "Инициатор",
+  "description": "Многофункциональный дрон управления. Не имеет вооружения, оснащен мощным строительным и ремонтным лучом.",
+  "flying": true,
+  "drag": 0.05,
+  "speed": 4.0,
+  "rotateSpeed": 15,
+  "accel": 0.1,
+  "itemCapacity": 50,
+  "health": 300,
+  "buildSpeed": 1.0,
+  "mineSpeed": 5.0,
+  "mineTier": 2,
+  "engineOffset": 6,
+  "engineSize": 2.5,
+  "hitSize": 8,
+  "isEnemy": false,
+  "hidden": true,
+  "targetPriority": -1,
+  "weapons": [
+    {
+      "type": "RepairBeamWeapon",
+      "width": 0.8,
+      "x": 0,
+      "y": 4,
+      "shootY": 0,
+      "beamEffect": "buildBeam",
+      "repairSpeed": 0.5,
+      "fractionRepairSpeed": 0.01,
+      "aimDst": 0,
+      "shootCone": 40,
+      "mirror": false,
+      "targetUnits": false,
+      "targetBuildings": true,
+      "bullet": {
+        "type": "BulletType",
+        "maxRange": 120
+      }
+    }
+  ]
+}
