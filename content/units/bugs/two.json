@@ -1,0 +1,86 @@
+{
+  "type": "legs",
+  "name": "Жук-Тридент",
+  "description": "Массивный боевой жук. Оснащен двумя ядовитыми отростками и мощными челюстями. После гибели из его останков выбираются два разведчика-камикадзе.",
+  "speed": 0.45,
+  "drag": 0.2,
+  "hitSize": 22,
+  "health": 1550,
+  "armor": 12,
+  "legCount": 8,
+  "legLength": 25,
+  "legForwardScl": 0.8,
+  "legMoveSpace": 1.5,
+  "hovering": true,
+  "rotateSpeed": 1.8,
+  "allowLegStep": true,
+
+  "weapons": [
+    /* Центральный плевок изо рта */
+    {
+      "name": "beetle-mouth",
+      "top": false,
+      "y": 7,
+      "x": 0,
+      "mirror": false,
+      "reload": 85,
+      "recoil": 3,
+      "shootSound": "release",
+      "bullet": {
+        "type": "ArtilleryBulletType",
+        "damage": 65,
+        "speed": 4,
+        "lifetime": 45,
+        "width": 16,
+        "height": 16,
+        "collides": true,
+        "splashDamage": 45,
+        "splashDamageRadius": 32,
+        "frontColor": "a7f542",
+        "backColor": "73ad21",
+        "status": "corroded",
+        "statusDuration": 600
+      }
+    },
+    /* Боковые отростки */
+    {
+      "name": "beetle-appendage",
+      "top": true,
+      "y": -2,
+      "x": 9,
+      "mirror": true,
+      "reload": 45,
+      "rotate": true,
+      "shootSound": "sap",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 22,
+        "speed": 5,
+        "lifetime": 35,
+        "width": 9,
+        "height": 11,
+        "frontColor": "bf92f9",
+        "backColor": "7d58a5",
+        "status": "sapped",
+        "statusDuration": 150
+      }
+    },
+    /* СПЕЦ-ОРУЖИЕ ДЛЯ СПАВНА ПРИ СМЕРТИ */
+    {
+      "shootOnDeath": true,
+      "reload": 10,
+      "mirror": false,
+      "shootEffect": "none",
+      "x": 0,
+      "y": 0,
+      "bullet": {
+        "type": "BulletType",
+        "spawnUnit": "beetle-t1",
+        "spawnCount": 2,
+        "instantDisplace": true,
+        "shootEffect": "none",
+        "smokeEffect": "none"
+      }
+    }
+  ]
+}
