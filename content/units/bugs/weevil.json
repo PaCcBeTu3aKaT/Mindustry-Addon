@@ -39,7 +39,7 @@
         "trailWidth": 4,
         "trailLength": 15,
         "hitEffect": "massiveExplosion",
-        "despawnEffect": "acidExplosion",
+        "despawnEffect": "plasticExplosion",
         "status": "corroded",
         "statusDuration": 800,
         "pierceCap": 3
