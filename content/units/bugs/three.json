@@ -65,22 +65,23 @@
         "statusDuration": 150
       }
     },
-    /* СПЕЦ-ОРУЖИЕ ДЛЯ СПАВНА ПРИ СМЕРТИ */
-    {
-      "shootOnDeath": true,
-      "reload": 10,
-      "mirror": false,
-      "shootEffect": "none",
-      "x": 0,
-      "y": 0,
-      "bullet": {
-        "type": "BulletType",
-        "spawnUnit": "beetle-t1",
-        "spawnCount": 2,
-        "instantDisplace": true,
-        "shootEffect": "none",
-        "smokeEffect": "none"
-      }
-    }
+   {
+  "shootOnDeath": true,
+  "reload": 10,
+  "mirror": false,
+  "x": 0,
+  "y": 0,
+  "bullet": {
+    "type": "BasicBulletType",
+    "speed": 0,
+    "damage": 0,
+    "lifetime": 1,
+    "shootEffect": "none",
+    "hitEffect": "none",
+    "despawnEffect": "none",
+    "spawnUnit": "one",
+    "spawnCount": 2
+  }
+}
   ]
 }
