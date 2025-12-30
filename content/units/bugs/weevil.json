@@ -17,7 +17,7 @@
 
   "weapons": [
     {
-      "name": "beetle-proboscis",
+      "name": "weevil-proboscis",
       "top": false,
       "y": 10,
       "x": 0,
@@ -33,7 +33,6 @@
         "lifetime": 45,
         "width": 10,
         "height": 24,
-        "shrinkY": 0.5, /* Пуля сужается к хвосту */
         "frontColor": "a7f542",
         "backColor": "73ad21",
         "trailColor": "a7f542",
