@@ -1,0 +1,59 @@
+{
+  "type": "legs",
+  "name": "Гребляк",
+  "description": "Тяжелый стрелок. Выстреливает из мощных челюстей концентрированные сгустки кислоты, которые разъедают броню и наносят урон по площади.",
+  "speed": 0.65,
+  "drag": 0.2,
+  "hitSize": 14,
+  "health": 650,
+  "armor": 6,
+  "legCount": 6,
+  "legLength": 15,
+  "legForwardScl": 0.6,
+  "legMoveSpace": 1.4,
+  "hovering": true,
+  "rotateSpeed": 2.2,
+  "allowLegStep": true,
+  
+  "weapons": [
+    {
+      "name": "greblyak-jaws",
+      "top": false,
+      "y": 4, 
+      "x": 0,
+      "mirror": false,
+      "reload": 30,
+      "recoil": 2,
+      "shootSound": "release",
+      "bullet": {
+        "type": "ArtilleryBulletType", 
+        "damage": 15,
+        "speed": 4.5,
+        "lifetime": 50,
+        "width": 12,
+        "height": 12,
+        "collides": true,
+        "collidesTiles": true,
+        "splashDamage": 20,
+        "splashDamageRadius": 24,
+        "frontColor": "a7f542",
+        "backColor": "73ad21",
+        "trailColor": "a7f542",
+        "trailWidth": 3,
+        "trailLength": 12,
+        "hitEffect": "acidExplosion",
+        "despawnEffect": "acidExplosion",
+        "status": "corroded",
+        "statusDuration": 450,
+        "fragBullets": 3,
+        "fragBullet": {
+          "type": "LiquidBulletType",
+          "liquid": "neoplasia-plasma", 
+          "damage": 5,
+          "speed": 1.5,
+          "lifetime": 20
+        }
+      }
+    }
+  ]
+}
