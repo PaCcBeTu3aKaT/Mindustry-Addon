@@ -50,7 +50,7 @@
       "shootSound": "respawn",
       "bullet": {
         "type": "BulletType",
-        "spawnUnit": "cicindela", 
+        "spawnUnit": "сicindela", 
         "spawnCount": 2,
         "lifetime": 1
       }
