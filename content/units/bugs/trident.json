@@ -1,14 +1,14 @@
 {
   "type": "legs",
-  "name": "Жук-Тридент",
-  "description": "Массивный боевой жук. Оснащен двумя ядовитыми отростками и мощными челюстями. После гибели из его останков выбираются два разведчика-камикадзе.",
-  "speed": 0.45,
+  "name": "Тридент",
+  "description": "Массивный боевой жук. Оснащен двумя ядовитыми отростками и мощными челюстями.",
+  "speed": 1.05,
   "drag": 0.2,
   "hitSize": 22,
   "health": 1550,
   "armor": 12,
-  "legCount": 8,
-  "legLength": 25,
+  "legCount": 6,
+  "legLength": 15,
   "legForwardScl": 0.8,
   "legMoveSpace": 1.5,
   "hovering": true,
@@ -16,9 +16,8 @@
   "allowLegStep": true,
 
   "weapons": [
-    /* Центральный плевок изо рта */
     {
-      "name": "beetle-mouth",
+      "name": "trident-mouth",
       "top": false,
       "y": 7,
       "x": 0,
@@ -28,7 +27,7 @@
       "shootSound": "release",
       "bullet": {
         "type": "ArtilleryBulletType",
-        "damage": 65,
+        "damage": 85,
         "speed": 4,
         "lifetime": 45,
         "width": 16,
@@ -42,19 +41,18 @@
         "statusDuration": 600
       }
     },
-    /* Боковые отростки */
     {
-      "name": "beetle-appendage",
+      "name": "trident-appendage",
       "top": true,
       "y": -2,
       "x": 9,
       "mirror": true,
-      "reload": 45,
+      "reload": 25,
       "rotate": true,
       "shootSound": "sap",
       "bullet": {
         "type": "BasicBulletType",
-        "damage": 22,
+        "damage": 12,
         "speed": 5,
         "lifetime": 35,
         "width": 9,
@@ -64,24 +62,6 @@
         "status": "sapped",
         "statusDuration": 150
       }
-    },
-   {
-  "shootOnDeath": true,
-  "reload": 10,
-  "mirror": false,
-  "x": 0,
-  "y": 0,
-  "bullet": {
-    "type": "BasicBulletType",
-    "speed": 0,
-    "damage": 0,
-    "lifetime": 1,
-    "shootEffect": "none",
-    "hitEffect": "none",
-    "despawnEffect": "none",
-    "spawnUnit": "one",
-    "spawnCount": 2
-  }
-}
+    }
   ]
 }
