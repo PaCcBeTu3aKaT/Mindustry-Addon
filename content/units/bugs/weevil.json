@@ -1,0 +1,50 @@
+{
+  "type": "legs",
+  "name": "Долгоносик",
+  "description": "Осадный жук с длинным хитиновым хоботком. Выстреливает тяжелые органические иглы на огромные расстояния.",
+  "speed": 0.5,
+  "drag": 0.2,
+  "hitSize": 26,
+  "health": 3800,
+  "armor": 18,
+  "legCount": 6,
+  "legLength": 30,
+  "legForwardScl": 0.7,
+  "legMoveSpace": 1.2,
+  "hovering": true,
+  "rotateSpeed": 1.5,
+  "allowLegStep": true,
+
+  "weapons": [
+    {
+      "name": "beetle-proboscis",
+      "top": false,
+      "y": 10,
+      "x": 0,
+      "mirror": false,
+      "reload": 100,
+      "recoil": 5,
+      "rotate": false,
+      "shootSound": "railgun",
+      "bullet": {
+        "type": "BasicBulletType",
+        "damage": 500,
+        "speed": 8,
+        "lifetime": 45,
+        "width": 10,
+        "height": 24,
+        "shrinkY": 0.5, /* Пуля сужается к хвосту */
+        "frontColor": "a7f542",
+        "backColor": "73ad21",
+        "trailColor": "a7f542",
+        "trailWidth": 4,
+        "trailLength": 15,
+        "hitEffect": "massiveExplosion",
+        "despawnEffect": "acidExplosion",
+        "status": "corroded",
+        "statusDuration": 800,
+        "pierceCap": 3
+      }
+    }
+  ]
+}
