@@ -1,6 +1,6 @@
 {
-"explosiveness": 2
-"color": "ffffff"
+"explosiveness": 2,
+"color": "ffffff",
 "research": {
  "parent": "sulfur"
 }
