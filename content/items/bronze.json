@@ -1,0 +1,8 @@
+{
+"name": "Бронза",
+"hardness": 2,
+"color": "cd7f32",
+"research": {
+ "parent": "cadmium"
+}
+}
