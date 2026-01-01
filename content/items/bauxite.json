@@ -1,0 +1,8 @@
+{
+  "name": "Боксит",
+  "color": "d16e51",
+  "hardness": 3,
+"research": {
+ "parent": "bronze"
+}
+}
