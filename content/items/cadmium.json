@@ -1,0 +1,8 @@
+{
+"name": "Кадмий",
+"hardness": 2,
+"color": "CCC3AB",
+"research": {
+ "parent": "Tin"
+}
+}
