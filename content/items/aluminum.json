@@ -1,0 +1,7 @@
+{
+  "name": "Алюминий",
+  "color": "b0bac0",
+"research": {
+ "parent": "alumina"
+}
+}
