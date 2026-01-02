@@ -1,0 +1,45 @@
+{
+  "type": "GenericCrafter",
+  "name": "Очиститель бокситов",
+  "description": "Механически очищает бокситовую породу с использованием воды, осаждая чистый глинозем.",
+  "size": 2,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "itemCapacity": 10,
+  "liquidCapacity": 30,
+  "craftTime": 30,
+  
+  "consumes": {
+    "power": 1.2,
+    "items": [
+      { "item": "bauxite", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.2
+    }
+  },
+
+  "outputItem": { "item": "alumina", "amount": 2 },
+
+  /* Настройка визуала */
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "water",
+        "padding": 2
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  },
+
+  "category": "crafting",
+  "research": "tin"
+}
