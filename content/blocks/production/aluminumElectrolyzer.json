@@ -11,7 +11,7 @@
   "consumes": {
     "power": 5.0,
     "items": [
-      { "item": "-alumina", "amount": 6 }
+      { "item": "alumina", "amount": 6 }
     ]
   },
 
