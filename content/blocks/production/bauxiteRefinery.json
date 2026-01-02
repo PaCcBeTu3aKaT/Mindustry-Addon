@@ -21,25 +21,7 @@
     }
   },
 
-  "outputItem": { "item": "alumina", "amount": 2 },
-
-  /* Настройка визуала */
-  "drawer": {
-    "type": "DrawMulti",
-    "drawers": [
-      { "type": "DrawDefault" },
-      {
-        "type": "DrawLiquidTile",
-        "drawLiquid": "water",
-        "padding": 2
-      },
-      {
-        "type": "DrawRegion",
-        "suffix": "-top"
-      }
-    ]
-  },
-
+  "outputItem": { "item": "alumina", "amount": 2 }
   "category": "crafting",
   "research": "tin"
 }
