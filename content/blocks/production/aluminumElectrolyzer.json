@@ -33,8 +33,6 @@
       }
     ]
   },
-
-  "craftEffect": "electrolize",
   "updateEffect": "smoke",
   "category": "crafting",
   "research": "bauxiteRefinery"
