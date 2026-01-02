@@ -16,23 +16,6 @@
   },
 
   "outputItem": { "item": "aluminum", "amount": 6 },
-
-  "drawer": {
-    "type": "DrawMulti",
-    "drawers": [
-      { "type": "DrawDefault" },
-      {
-        "type": "DrawArcSmelt",
-        "color": "9eb2c0",
-        "particles": 15
-      },
-      {
-        "type": "DrawBlurSpin",
-        "suffix": "-rotator",
-        "blurThresh": 0.01
-      }
-    ]
-  },
   "updateEffect": "smoke",
   "category": "crafting",
   "research": "bauxiteRefinery"
