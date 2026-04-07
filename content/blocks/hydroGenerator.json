@@ -5,7 +5,7 @@
   "size": 4,
   "health": 1200,
   "powerProduction": 30, 
-  "attribute": "LiquidBlock",
+  "attribute": "Liquid",
   "effectChance": 0.05,
   "displayEfficiency": true,
   "minEfficiency": 0.1,
