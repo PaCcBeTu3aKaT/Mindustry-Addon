@@ -1,26 +1,34 @@
 {
-  "type": "LiquidGenerator",
+  "type": "AttributeGenerator",
   "name": "Гидро-генератор",
-  "description": "Использует встроенные турбины для выработки энергии из потока воды. Должен быть размещен непосредственно на источнике воды.",
+  "description": "Преобразует кинетическую энергию течения в электричество. Работает только при размещении на воде.",
   "size": 4,
   "health": 1200,
+
+  /* Мощность при 100% эффективности (на глубокой воде) */
+  "powerProduction": 12.0, 
   
-  /* Настройка генерации */
-  "powerProduction": 8.0,
+  /* Привязка к воде */
+  "attribute": "water",
   
-  /* Потребление */
-  "hasLiquids": true,
-  "liquidCapacity": 50,
-  /* Указываем, что он сам берет воду из-под себя */
+  /* Критически важные настройки для гидро-блоков: */
+  "baseEfficiency": 0.0,    /* На суше (где нет воды) будет выдавать 0 */
+  "minEfficiency": 0.1,     /* Минимальный порог для запуска */
+  "displayEfficiency": true,
+  
+  "floating": true,         /* Позволяет блоку плавать (важно для глубокой воды) */
+  "placeableLiquid": true,  /* Разрешает установку на жидкости */
+
+  "hasPower": true,
+  "outputsPower": true,
   "consumes": {
     "liquid": {
       "liquid": "water",
-      "amount": 0.1
+      "amount": 0.0,
+      "booster": false,
+      "optional": true
     }
   },
-  
-  /* Магия: заставляем его работать как помпу */
-  "pumpAmount": 0.2, 
 
   "requirements": [
     { "item": "copper", "amount": 120 },
@@ -29,5 +37,6 @@
     { "item": "titanium", "amount": 20 }
   ],
 
-  "category": "power"
+  "category": "power",
+  "research": "core-outpost"
 }
