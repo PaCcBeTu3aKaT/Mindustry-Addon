@@ -15,21 +15,10 @@
   "baseEfficiency": 0.0,    /* На суше (где нет воды) будет выдавать 0 */
   "minEfficiency": 0.1,     /* Минимальный порог для запуска */
   "displayEfficiency": true,
-  
-  "floating": true,         /* Позволяет блоку плавать (важно для глубокой воды) */
   "placeableLiquid": true,  /* Разрешает установку на жидкости */
 
   "hasPower": true,
   "outputsPower": true,
-  "consumes": {
-    "liquid": {
-      "liquid": "water",
-      "amount": 0.0,
-      "booster": false,
-      "optional": true
-    }
-  },
-
   "requirements": [
     { "item": "copper", "amount": 120 },
     { "item": "lead", "amount": 80 },
