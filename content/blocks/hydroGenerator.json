@@ -6,7 +6,6 @@
   "health": 1200,
   "powerProduction": 30, 
   "attribute": "water",
-  "generateEffect": "bubbles",
   "effectChance": 0.05,
   "displayEfficiency": true,
   "minEfficiency": 0.1,
