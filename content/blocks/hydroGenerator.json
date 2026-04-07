@@ -17,7 +17,6 @@
     },
     "category": "power",
     "hasPower": true,
-    "canOverdrive": false,
     "itemCapacity": 0,
     "liquidCapacity": 0
   }
