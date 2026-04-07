@@ -1,22 +1,33 @@
 {
-  "type": "ThermalGenerator",
+  "type": "LiquidGenerator",
   "name": "Гидро-генератор",
-  "description": "Использует энергию течения и давление воды для выработки электричества. Должен быть размещен на глубокой или мелкой воде.",
+  "description": "Использует встроенные турбины для выработки энергии из потока воды. Должен быть размещен непосредственно на источнике воды.",
   "size": 4,
   "health": 1200,
-  "powerProduction": 30, 
-  "attribute": "water",
-  "effectChance": 0.05,
-  "displayEfficiency": true,
-  "minEfficiency": 0.1,
-  "hasPower": true,
-  "outputsPower": true,
+  
+  /* Настройка генерации */
+  "powerProduction": 8.0,
+  
+  /* Потребление */
+  "hasLiquids": true,
+  "liquidCapacity": 50,
+  /* Указываем, что он сам берет воду из-под себя */
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1
+    }
+  },
+  
+  /* Магия: заставляем его работать как помпу */
+  "pumpAmount": 0.2, 
+
   "requirements": [
     { "item": "copper", "amount": 120 },
     { "item": "lead", "amount": 80 },
     { "item": "graphite", "amount": 40 },
     { "item": "titanium", "amount": 20 }
   ],
-  "category": "power",
-  "research": "core-outpost"
+
+  "category": "power"
 }
