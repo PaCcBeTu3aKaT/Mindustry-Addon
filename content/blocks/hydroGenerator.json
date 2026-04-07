@@ -1,22 +1,14 @@
 {
-  "type": "AttributeGenerator",
+  "type": "ThermalGenerator",
   "name": "Гидро-генератор",
-  "description": "Преобразует кинетическую энергию течения в электричество. Работает только при размещении на воде.",
+  "description": "Использует энергию течения и давление воды для выработки электричества. Должен быть размещен на глубокой или мелкой воде.",
   "size": 4,
   "health": 1200,
-
-  /* Мощность при 100% эффективности (на глубокой воде) */
-  "powerProduction": 12.0, 
-  
-  /* Привязка к воде */
-  "attribute": "water",
-  
-  /* Критически важные настройки для гидро-блоков: */
-  "baseEfficiency": 0.0,    /* На суше (где нет воды) будет выдавать 0 */
-  "minEfficiency": 0.1,     /* Минимальный порог для запуска */
+  "powerProduction": 30, 
+  "attribute": "Water",
+  "effectChance": 0.05,
   "displayEfficiency": true,
-  "placeableLiquid": true,  /* Разрешает установку на жидкости */
-
+  "minEfficiency": 0.1,
   "hasPower": true,
   "outputsPower": true,
   "requirements": [
@@ -25,7 +17,6 @@
     { "item": "graphite", "amount": 40 },
     { "item": "titanium", "amount": 20 }
   ],
-
   "category": "power",
   "research": "core-outpost"
 }
