@@ -1,19 +1,20 @@
 {
-    "type": "powerGenerator",
-    "localizedName": "Гидро-генератор",
-    "description": "Генератор энергии, работающий от окружающей воды. Производство мощности зависит от глубины ячейки и количества соседних водных ячеек.",
-    "size": 4,
-    "health": 1200,
-    "powerProduction": 2000,
-    "envBoost": {
-      "water": 1.0
-    },
-    "requirements": {
-      "copper": 120,
-      "lead": 80,
-      "graphite": 40,
-      "titanium": 20
-    },
-    "category": "power"
-  }
-
+  "type": "powerGenerator",
+  "name": "Гидро-генератор",
+  "description": "Генератор энергии, работающий от окружающей воды. Эффективность зависит от глубины и количества соседних водных ячеек.",
+  "size": 4,
+  "health": 1200,
+  "powerProduction": 33.3, /* В Mindustry мощность обычно указывается в единицах/сек (2000 - это очень много) */
+  "hasPower": true,
+  "outputsPower": true,
+  "envBoost": {
+    "water": 1.0
+  },
+  "requirements": [
+    { "item": "copper", "amount": 120 },
+    { "item": "lead", "amount": 80 },
+    { "item": "graphite", "amount": 40 },
+    { "item": "titanium", "amount": 20 }
+  ],
+  "category": "power"
+}
