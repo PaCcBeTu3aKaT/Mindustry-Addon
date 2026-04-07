@@ -4,7 +4,7 @@
   "description": "Генератор энергии, работающий от окружающей воды. Эффективность зависит от глубины и количества соседних водных ячеек.",
   "size": 4,
   "health": 1200,
-  "powerProduction": 2000,
+  "powerProduction": 33,
   "hasPower": true,
   "outputsPower": true,
   "envBoost": {
