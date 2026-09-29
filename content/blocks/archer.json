@@ -5,7 +5,7 @@
   "size": 2,
   "scaledHealth": 600,
   "range": 265.0,
-  "reload": 40.0,
+  "reload": 90.0,
   "recoil": 2.0,
   "shake": 2.0,
   "targetAir": true,
@@ -36,7 +36,7 @@
 
   "shootType": {
     "type": "LaserBulletType",
-    "damage": 480.0,
+    "damage": 680.0,
     "length": 273.0,
     "lifetime": 16.0,
     "hitSize": 4.0,
