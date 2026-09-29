@@ -1,7 +1,11 @@
 package planet;
 
-import mindustry.maps.planet.SerpuloPlanetGenerator;
+import mindustry.maps.planet.PlanetGenerator;
 
-public class selenaGenerator extends SerpuloPlanetGenerator {
+public class selenaGenerator extends PlanetGenerator {
 
+    @Override
+    public void generate() {
+        // Здесь позже будет генерация Селены.
+    }
 }
