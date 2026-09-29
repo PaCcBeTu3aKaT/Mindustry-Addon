@@ -18,11 +18,11 @@ public class modPlanets {
 
             hasAtmosphere = true;
 
-            atmosphereColor = Color.valueOf("6f9f63");
+            atmosphereColor = Color.valueOf("6fa66b");
             atmosphereRadIn = 0.01f;
             atmosphereRadOut = 0.18f;
 
-            iconColor = Color.valueOf("79b86a");
+            iconColor = Color.valueOf("75b86d");
 
             startSector = 1;
 
