@@ -1,0 +1,62 @@
+{
+  "type": "PowerTurret",
+  "name": "Лучник",
+  "category": "turret",
+  "size": 2,
+  "scaledHealth": 680,
+  "range": 265.0,
+  "reload": 40.0,
+  "recoil": 2.0,
+  "shake": 2.0,
+  "targetAir": true,
+  "moveWhileCharging": false,
+  "accurateDelay": false,
+  "shootSound": "laser",
+  "shootEffect": "lancerLaserShoot",
+  "smokeEffect": "none",
+  "heatColor": "ff0000",
+
+  "requirements": [
+    "copper/60",
+    "lead/70",
+    "silicon/60",
+    "titanium/30"
+  ],
+
+  "consumes": {
+    "power": 18.0,
+    "coolant": {
+      "amount": 0.2
+    }
+  },
+
+  "shoot": {
+    "firstShotDelay": 40.0
+  },
+
+  "shootType": {
+    "type": "LaserBulletType",
+    "damage": 480.0,
+    "length": 273.0,
+    "lifetime": 16.0,
+    "hitSize": 4.0,
+    "drawSize": 400.0,
+    "pierceCap": 15,
+    "ammoMultiplier": 1.0,
+    "buildingDamageMultiplier": 0.25,
+    "collidesAir": false,
+    "hitEffect": "hitLancer",
+    "colors": [
+      "8ca0ff66",
+      "8ca0ff",
+      "ffffff"
+    ],
+    "chargeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        "lancerLaserCharge",
+        "lancerLaserChargeBegin"
+      ]
+    }
+  }
+}
