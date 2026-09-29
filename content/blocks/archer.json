@@ -3,7 +3,7 @@
   "name": "Лучник",
   "category": "turret",
   "size": 2,
-  "scaledHealth": 680,
+  "scaledHealth": 600,
   "range": 265.0,
   "reload": 40.0,
   "recoil": 2.0,
@@ -17,14 +17,14 @@
   "heatColor": "ff0000",
 
   "requirements": [
-    "copper/60",
-    "lead/70",
-    "silicon/60",
-    "titanium/30"
+    "copper/240",
+    "lead/140",
+    "silicon/120",
+    "titanium/140"
   ],
 
   "consumes": {
-    "power": 18.0,
+    "power": 12.0,
     "coolant": {
       "amount": 0.2
     }
@@ -41,9 +41,9 @@
     "lifetime": 16.0,
     "hitSize": 4.0,
     "drawSize": 400.0,
-    "pierceCap": 15,
+    "pierceCap": 55,
     "ammoMultiplier": 1.0,
-    "buildingDamageMultiplier": 0.25,
+    "buildingDamageMultiplier": 0.75,
     "collidesAir": false,
     "hitEffect": "hitLancer",
     "colors": [
