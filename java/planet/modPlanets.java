@@ -17,16 +17,15 @@ public class modPlanets {
             meshLoader = () -> new HexMesh(this, 5);
 
             hasAtmosphere = true;
-
             atmosphereColor = Color.valueOf("6fa66b");
             atmosphereRadIn = 0.01f;
             atmosphereRadOut = 0.18f;
 
             iconColor = Color.valueOf("75b86d");
 
-            startSector = 1;
-
             alwaysUnlocked = true;
+
+            startSector = 1;
         }};
     }
 }
