@@ -1,0 +1,11 @@
+{
+  "name": "Жидкий натрий",
+  "description": "Высокотемпературный жидкий металл. Служит теплоносителем для мощных реакторов.",
+  "color": "ffe1a8",
+  "viscosity": 0.3,
+  "temperature": 0.8,
+  "heatCapacity": 1.4,
+  "flammability": 1.2,
+  "explosiveness": 1.2,
+  "coolant": false
+}
