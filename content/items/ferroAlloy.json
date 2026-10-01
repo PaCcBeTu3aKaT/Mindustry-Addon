@@ -1,4 +1,8 @@
 {
-"hardness": 7
-"color": "00416A"
+"name": "Ферро-сплав",
+"hardness": 7,
+"color": "00416A",
+"research": {
+"parent": "cobalt"
+}
 }
