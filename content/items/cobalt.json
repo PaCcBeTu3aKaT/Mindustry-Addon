@@ -1,7 +1,8 @@
 {
-"hardness": 6
-"color": "848FA5"
-  "research": {
- "parent": "chromium"
+"name": "Кобальт",
+"hardness": 6,
+"color": "848FA5",
+"research": {
+"parent": "chromium"
 }
 }
