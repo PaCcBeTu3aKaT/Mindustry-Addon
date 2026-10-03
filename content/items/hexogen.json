@@ -1,8 +1,7 @@
 {
-"name": "Гексоген",
-"explosiveness": 2,
-"color": "ffffff",
-"research": {
- "parent": "sulfur"
-}
+  "name": "Гексоген",
+  "description": "Мощное взрывчатое вещество.",
+  "color": "a83232",
+  "explosiveness": 4.0,
+  "flammability": 1.2
 }
