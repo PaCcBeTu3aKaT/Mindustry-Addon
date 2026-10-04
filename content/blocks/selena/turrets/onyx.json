@@ -36,6 +36,7 @@
     "ferroAlloy": {
       "type": "ArtilleryBulletType",
       "speed": 20.0,
+      "damage": 700.0,
       "splashDamage": 700.0,
       "splashDamageRadius": 48.0,
       "width": 18.0,
@@ -64,6 +65,7 @@
     "cobalt-60": {
       "type": "ArtilleryBulletType",
       "speed": 17.5,
+      "damage": 850.0,
       "splashDamage": 850.0,
       "splashDamageRadius": 84.0,
       "width": 16.0,
@@ -94,6 +96,7 @@
     "hexogen": {
       "type": "ArtilleryBulletType",
       "speed": 15.0,
+      "damage": 750.0,
       "splashDamage": 750.0,
       "splashDamageRadius": 60.0,
       "width": 17.0,
