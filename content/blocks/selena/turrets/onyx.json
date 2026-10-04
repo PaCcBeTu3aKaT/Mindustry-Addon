@@ -36,8 +36,8 @@
     "ferroAlloy": {
       "type": "ArtilleryBulletType",
       "speed": 20.0,
-      "damage": 880.0,
-      "splashDamage": 100.0,
+      "damage": 580.0,
+      "splashDamage": 400.0,
       "splashDamageRadius": 48.0,
       "width": 18.0,
       "height": 24.0,
