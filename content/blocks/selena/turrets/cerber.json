@@ -77,7 +77,7 @@
     "aluminum": {
       "type": "BasicBulletType",
       "speed": 11.0,
-      "damage": 55.0,
+      "damage": 80.0,
       "homingPower": 0.25,
       "homingRange": 40.0,
       "width": 12.0,
