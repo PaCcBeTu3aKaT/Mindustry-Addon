@@ -113,7 +113,7 @@
     "cobalt": {
       "type": "BasicBulletType",
       "speed": 8.5,
-      "damage": 80.0,
+      "damage": 120.0,
       "splashDamage": 45.0,
       "splashDamageRadius": 20.0,
       "pierce": true,
@@ -133,8 +133,8 @@
     "hexogen": {
       "type": "BasicBulletType",
       "speed": 9.0,
-      "damage": 90.0,
-      "splashDamage": 85.0,
+      "damage": 100.0,
+      "splashDamage": 70.0,
       "splashDamageRadius": 30.0,
       "pierce": true,
       "pierceCap": 2,
@@ -151,8 +151,8 @@
     "ferroAlloy": {
       "type": "BasicBulletType",
       "speed": 12.0,
-      "damage": 180.0,
-      "splashDamage": 60.0,
+      "damage": 150.0,
+      "splashDamage": 50.0,
       "splashDamageRadius": 25.0,
       "pierce": true,
       "pierceCap": 6,
