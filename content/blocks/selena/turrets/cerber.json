@@ -164,9 +164,11 @@
     }
   },
   "requirements": [
-    { "item": "ferroAlloy", "amount": 120 },
-    { "item": "chromium", "amount": 180 },
-    { "item": "cobalt", "amount": 150 },
+    { "item": "tin", "amount": 350 },
+    { "item": "cadmium", "amount": 150 },
+    { "item": "ferroAlloy", "amount": 320 },
+    { "item": "chromium", "amount": 280 },
+    { "item": "cobalt", "amount": 250 },
     { "item": "aluminum", "amount": 250 }
   ],
   "category": "turret"
