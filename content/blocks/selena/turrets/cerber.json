@@ -157,3 +157,16 @@
       "hitEffect": "impactShockwave",
       "despawnEffect": "impactShockwave",
       "frontColor": "ffe082",
+      "backColor": "ffb300",
+      "hitColor": "ffb300"
+    }
+  },
+  "requirements": [
+    { "item": "tin", "amount": 420 }
+    { "item": "ferroAlloy", "amount": 300 },
+    { "item": "chromium", "amount": 280 },
+    { "item": "cobalt", "amount": 250 },
+    { "item": "aluminum", "amount": 250 }
+  ],
+  "category": "turret"
+}
