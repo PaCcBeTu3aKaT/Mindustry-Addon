@@ -137,8 +137,8 @@
       "height": 26.0,
       "lifetime": 26.0,
       "ammoMultiplier": 5,
-      "hitEffect": "reactorExplosive",
-      "despawnEffect": "reactorExplosive",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
       "frontColor": "ff8e8e",
       "backColor": "a83232",
       "hitColor": "a83232"
@@ -155,8 +155,8 @@
       "height": 30.0,
       "lifetime": 20.0,
       "ammoMultiplier": 6,
-      "hitEffect": "impactShockwave",
-      "despawnEffect": "impactShockwave",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
       "frontColor": "ffe082",
             "backColor": "ffb300",
       "hitColor": "ffb300"
