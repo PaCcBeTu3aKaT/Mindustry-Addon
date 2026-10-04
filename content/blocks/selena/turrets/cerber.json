@@ -154,8 +154,8 @@
       "height": 30.0,
       "lifetime": 32.0,
       "ammoMultiplier": 5,
-      "hitEffect": "impactShockwave",
-      "despawnEffect": "impactShockwave",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
       "frontColor": "ffe082",
       "backColor": "ffb300",
       "hitColor": "ffb300"
