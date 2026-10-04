@@ -1,0 +1,115 @@
+{
+  "type": "ItemTurret",
+  "name": "Гром",
+  "description": "Двухствольная артиллерийская гаубица. Ведёт навесный огонь снарядами крупного калибра по скоплениям наземных сил врага. Обладает заметным разбросом и высокой площадью поражения.",
+  "size": 2,
+  "health": 780,
+  "reload": 45.0,
+  "range": 280.0,
+  "recoil": 4.0,
+  "shootY": 6.0,
+  "shootCone": 15.0,
+  "inaccuracy": 11.0,
+  "velocityRnd": 0.18,
+  "rotateSpeed": 4.0,
+  "shake": 2.5,
+  "targetAir": false,
+  "ammoUseEffect": "casing2",
+  "shootSound": "artillery",
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 5.0
+  },
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-l",
+        "progress": "recoil",
+        "recoilIndex": 0,
+        "under": true,
+        "moveY": -4.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-r",
+        "progress": "recoil",
+        "recoilIndex": 1,
+        "under": true,
+        "moveY": -4.0
+      }
+    ]
+  },
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.25
+  },
+  "ammoTypes": {
+    "cadmium": {
+      "type": "ArtilleryBulletType",
+      "speed": 3.0,
+      "damage": 18.0,
+      "splashDamage": 42.0,
+      "splashDamageRadius": 24.0,
+      "width": 12.0,
+      "height": 12.0,
+      "lifetime": 93.3,
+      "ammoMultiplier": 3,
+      "collidesTiles": false,
+      "knockback": 0.8,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "c5d1d6",
+      "backColor": "9ea8b0",
+      "hitColor": "9ea8b0"
+    },
+    "aluminum": {
+      "type": "ArtilleryBulletType",
+      "speed": 3.6,
+      "damage": 22.0,
+      "splashDamage": 48.0,
+      "splashDamageRadius": 28.0,
+      "width": 11.0,
+      "height": 11.0,
+      "lifetime": 77.7,
+      "ammoMultiplier": 4,
+      "reloadMultiplier": 1.2,
+      "collidesTiles": false,
+      "knockback": 0.6,
+      "trailLength": 6,
+      "trailWidth": 2.0,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "ffffff",
+      "backColor": "c4d6e0",
+      "hitColor": "c4d6e0"
+    },
+    "hexogen": {
+      "type": "ArtilleryBulletType",
+      "speed": 2.8,
+      "damage": 30.0,
+      "splashDamage": 85.0,
+      "splashDamageRadius": 42.0,
+      "width": 14.0,
+      "height": 14.0,
+      "lifetime": 100.0,
+      "ammoMultiplier": 4,
+      "collidesTiles": false,
+      "knockback": 1.4,
+      "status": "blasted",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+      "frontColor": "ff8e8e",
+      "backColor": "a83232",
+      "hitColor": "a83232"
+    }
+  },
+  "requirements": [
+    { "item": "aluminum", "amount": 65 },
+    { "item": "bronze", "amount": 50 },
+    { "item": "tin", "amount": 75 }
+  ],
+  "category": "turret"
+}
