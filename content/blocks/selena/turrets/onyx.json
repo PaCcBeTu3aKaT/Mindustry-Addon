@@ -14,7 +14,7 @@
   "shake": 6.0,
   "targetGround": true,
   "targetAir": true,
-  "shootSound": "shootCollaris",
+  "shootSound": "shootArtillery",
   "ammoUseEffect": "casing3Double",
   "drawer": {
     "type": "DrawTurret",
