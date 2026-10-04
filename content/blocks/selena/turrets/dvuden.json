@@ -105,9 +105,10 @@
     }
   },
   "requirements": [
+    { "item": "tin", "amount": 150 },
     { "item": "chromium", "amount": 90 },
     { "item": "aluminum", "amount": 110 },
-    { "item": "bronze", "amount": 80 }
+    { "item": "cadmium", "amount": 40 }
   ],
   "category": "turret"
 }
