@@ -1,0 +1,107 @@
+{
+  "type": "ItemTurret",
+  "name": "Тризуб",
+  "description": "Мощная трёхствольная турель среднего тира. Выпускает плотные залпы снарядов с высоким залповым уроном.",
+  "size": 2,
+  "health": 820,
+  "reload": 15.0,
+  "range": 190.0,
+  "recoil": 1.5,
+  "shootY": 6.0,
+  "shootCone": 18.0,
+  "inaccuracy": 4.0,
+  "rotateSpeed": 9.0,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 3,
+    "spread": 3.0
+  },
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-l",
+        "progress": "recoil",
+        "recoilIndex": 0,
+        "under": true,
+        "moveY": -2.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-m",
+        "progress": "recoil",
+        "recoilIndex": 1,
+        "under": true,
+        "moveY": -2.5
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-r",
+        "progress": "recoil",
+        "recoilIndex": 2,
+        "under": true,
+        "moveY": -2.0
+      }
+    ]
+  },
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.25
+  },
+  "ammoTypes": {
+    "aluminum": {
+      "type": "BasicBulletType",
+      "speed": 5.5,
+      "damage": 24.0,
+      "width": 8.0,
+      "height": 12.0,
+      "lifetime": 35.0,
+      "ammoMultiplier": 3,
+      "reloadMultiplier": 1.15,
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "ffffff",
+      "backColor": "c4d6e0",
+      "hitColor": "c4d6e0"
+    },
+    "bronze": {
+      "type": "BasicBulletType",
+      "speed": 4.8,
+      "damage": 32.0,
+      "pierce": true,
+      "pierceCap": 2,
+      "width": 9.0,
+      "height": 13.0,
+      "lifetime": 40.0,
+      "ammoMultiplier": 2,
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "f3e9d2",
+      "backColor": "d4a373",
+      "hitColor": "d4a373"
+    },
+    "hexogen": {
+      "type": "BasicBulletType",
+      "speed": 5.0,
+      "damage": 45.0,
+      "splashDamage": 30.0,
+      "splashDamageRadius": 20.0,
+      "width": 10.0,
+      "height": 14.0,
+      "lifetime": 38.0,
+      "ammoMultiplier": 4,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+      "frontColor": "ff8e8e",
+      "backColor": "a83232",
+      "hitColor": "a83232"
+    }
+  },
+  "requirements": [
+    { "item": "aluminum", "amount": 70 },
+    { "item": "bronze", "amount": 40 },
+    { "item": "tin", "amount": 60 }
+  ],
+  "category": "turret"
+}
