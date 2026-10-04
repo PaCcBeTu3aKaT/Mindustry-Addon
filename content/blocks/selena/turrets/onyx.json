@@ -14,7 +14,7 @@
   "shake": 6.0,
   "targetGround": true,
   "targetAir": true,
-  "shootSound": "artillery",
+  "shootSound": "shootCollaris",
   "ammoUseEffect": "casing3Double",
   "drawer": {
     "type": "DrawTurret",
@@ -49,7 +49,7 @@
       "knockback": 2.5,
       "trailLength": 16,
       "trailWidth": 3.2,
-      "hitSound": "titanExplosion",
+      "hitSound": "explosionTitan",
       "hitEffect": {
         "type": "MultiEffect",
         "effects": [
@@ -80,7 +80,7 @@
       "statusDuration": 300.0,
       "trailLength": 14,
       "trailWidth": 3.0,
-      "hitSound": "titanExplosion",
+      "hitSound": "explosionTitan",
       "hitEffect": {
         "type": "MultiEffect",
         "effects": [
@@ -111,7 +111,7 @@
       "statusDuration": 240.0,
       "trailLength": 12,
       "trailWidth": 2.8,
-      "hitSound": "titanExplosion",
+      "hitSound": "explosionTitan",
       "hitEffect": {
         "type": "MultiEffect",
         "effects": [
@@ -126,7 +126,6 @@
     }
   },
   "requirements": [
-    { "item": "tin", "amount": 400 },
     { "item": "ferroAlloy", "amount": 420 },
     { "item": "cobalt", "amount": 480 },
     { "item": "chromium", "amount": 300 },
