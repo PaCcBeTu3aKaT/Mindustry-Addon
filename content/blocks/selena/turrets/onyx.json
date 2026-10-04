@@ -14,7 +14,7 @@
   "shake": 6.0,
   "targetGround": true,
   "targetAir": true,
-  "shootSound": "mediumCannon",
+  "shootSound": "artillery",
   "ammoUseEffect": "casing3Double",
   "drawer": {
     "type": "DrawTurret",
@@ -25,8 +25,8 @@
         "progress": "recoil",
         "under": true,
         "moveY": -6.0
-      },
-    ],
+      }
+    ]
   },
   "coolant": {
     "type": "ConsumeCoolant",
@@ -35,13 +35,13 @@
   "ammoTypes": {
     "ferroAlloy": {
       "type": "ArtilleryBulletType",
-      "speed": 14.0,
+      "speed": 20.0,
       "damage": 380.0,
       "splashDamage": 260.0,
       "splashDamageRadius": 48.0,
       "width": 18.0,
       "height": 24.0,
-      "lifetime": 30.0,
+      "lifetime": 21.0,
       "ammoMultiplier": 2,
       "collidesGround": true,
       "collidesAir": true,
@@ -51,12 +51,12 @@
       "trailWidth": 3.2,
       "hitSound": "titanExplosion",
       "hitEffect": {
-  "type": "MultiEffect",
-  "effects": [
-    "titanExplosion",
-    "titanSmoke"
-  ],
-},
+        "type": "MultiEffect",
+        "effects": [
+          "titanExplosion",
+          "titanSmoke"
+        ]
+      },
       "despawnEffect": "blastExplosion",
       "frontColor": "ffffff",
       "backColor": "ffb300",
@@ -64,13 +64,13 @@
     },
     "cobalt-60": {
       "type": "ArtilleryBulletType",
-      "speed": 12.0,
-      "damage": 290.0,
-      "splashDamage": 320.0,
+      "speed": 17.5,
+      "damage": 280.0,
+      "splashDamage": 480.0,
       "splashDamageRadius": 64.0,
       "width": 16.0,
       "height": 22.0,
-      "lifetime": 35.0,
+      "lifetime": 24.0,
       "ammoMultiplier": 2,
       "collidesGround": true,
       "collidesAir": true,
@@ -82,12 +82,12 @@
       "trailWidth": 3.0,
       "hitSound": "titanExplosion",
       "hitEffect": {
-  "type": "MultiEffect",
-  "effects": [
-    "titanExplosion",
-    "titanSmoke"
-  ],
-},
+        "type": "MultiEffect",
+        "effects": [
+          "titanExplosion",
+          "titanSmoke"
+        ]
+      },
       "despawnEffect": "blastExplosion",
       "frontColor": "e4ffd6",
       "backColor": "388e3c",
@@ -95,13 +95,13 @@
     },
     "hexogen": {
       "type": "ArtilleryBulletType",
-      "speed": 10.5,
+      "speed": 15.0,
       "damage": 220.0,
       "splashDamage": 450.0,
       "splashDamageRadius": 80.0,
       "width": 17.0,
       "height": 22.0,
-      "lifetime": 40.0,
+      "lifetime": 28.0,
       "ammoMultiplier": 3,
       "collidesGround": true,
       "collidesAir": true,
@@ -113,12 +113,12 @@
       "trailWidth": 2.8,
       "hitSound": "titanExplosion",
       "hitEffect": {
-  "type": "MultiEffect",
-  "effects": [
-    "titanExplosion",
-    "titanSmoke"
-  ],
-},
+        "type": "MultiEffect",
+        "effects": [
+          "titanExplosion",
+          "titanSmoke"
+        ]
+      },
       "despawnEffect": "blastExplosion",
       "frontColor": "ff8e8e",
       "backColor": "a83232",
@@ -126,6 +126,7 @@
     }
   },
   "requirements": [
+    { "item": "tin", "amount": 400 },
     { "item": "ferroAlloy", "amount": 420 },
     { "item": "cobalt", "amount": 480 },
     { "item": "chromium", "amount": 300 },
