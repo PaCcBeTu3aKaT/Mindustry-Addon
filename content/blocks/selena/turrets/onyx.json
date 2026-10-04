@@ -25,12 +25,12 @@
         "progress": "recoil",
         "under": true,
         "moveY": -6.0
-      }
-    ]
+      },
+    ],
   },
   "coolant": {
     "type": "ConsumeCoolant",
-    "amount": 0.5
+    "amount": 0.3
   },
   "ammoTypes": {
     "ferroAlloy": {
@@ -50,7 +50,13 @@
       "trailLength": 16,
       "trailWidth": 3.2,
       "hitSound": "titanExplosion",
-      "hitEffect": "blastExplosion",
+      "hitEffect": {
+  "type": "MultiEffect",
+  "effects": [
+    "titanExplosion",
+    "titanSmoke"
+  ],
+},
       "despawnEffect": "blastExplosion",
       "frontColor": "ffffff",
       "backColor": "ffb300",
@@ -75,7 +81,13 @@
       "trailLength": 14,
       "trailWidth": 3.0,
       "hitSound": "titanExplosion",
-      "hitEffect": "reactorExplosive",
+      "hitEffect": {
+  "type": "MultiEffect",
+  "effects": [
+    "titanExplosion",
+    "titanSmoke"
+  ],
+},
       "despawnEffect": "blastExplosion",
       "frontColor": "e4ffd6",
       "backColor": "388e3c",
@@ -100,7 +112,13 @@
       "trailLength": 12,
       "trailWidth": 2.8,
       "hitSound": "titanExplosion",
-      "hitEffect": "blastExplosion",
+      "hitEffect": {
+  "type": "MultiEffect",
+  "effects": [
+    "titanExplosion",
+    "titanSmoke"
+  ],
+},
       "despawnEffect": "blastExplosion",
       "frontColor": "ff8e8e",
       "backColor": "a83232",
