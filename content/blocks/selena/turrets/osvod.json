@@ -1,0 +1,103 @@
+{
+  "type": "ItemTurret",
+  "name": "Освод",
+  "description": "Специализированная двухствольная зенитная турель. Ведёт огонь исключительно по воздушным целям.",
+  "size": 2,
+  "health": 550,
+  "reload": 12.0,
+  "range": 220.0,
+  "recoil": 2.0,
+  "shootY": 5.0,
+  "shootCone": 20.0,
+  "inaccuracy": 3.0,
+  "rotateSpeed": 15.0,
+  "targetAir": true,
+  "targetGround": false,
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 2,
+    "spread": 4.0
+  },
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-l",
+        "progress": "recoil",
+        "recoilIndex": 0,
+        "under": true,
+        "moveY": -2.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-r",
+        "progress": "recoil",
+        "recoilIndex": 1,
+        "under": true,
+        "moveY": -2.0
+      }
+    ]
+  },
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
+  "ammoTypes": {
+    "bronze": {
+      "type": "FlakBulletType",
+      "speed": 6.0,
+      "damage": 16.0,
+      "splashDamage": 12.0,
+      "splashDamageRadius": 24.0,
+      "width": 8.0,
+      "height": 10.0,
+      "lifetime": 38.0,
+      "ammoMultiplier": 3,
+      "hitEffect": "flakExplosion",
+      "despawnEffect": "flakExplosion",
+      "frontColor": "f3e9d2",
+      "backColor": "d4a373",
+      "hitColor": "d4a373"
+    },
+    "cadmium": {
+      "type": "FlakBulletType",
+      "speed": 6.5,
+      "damage": 22.0,
+      "splashDamage": 18.0,
+      "splashDamageRadius": 28.0,
+      "width": 8.0,
+      "height": 12.0,
+      "lifetime": 35.0,
+      "ammoMultiplier": 4,
+      "reloadMultiplier": 1.2,
+      "hitEffect": "flakExplosion",
+      "despawnEffect": "flakExplosion",
+      "frontColor": "c5d1d6",
+      "backColor": "9ea8b0",
+      "hitColor": "9ea8b0"
+    },
+    "hexogen": {
+      "type": "FlakBulletType",
+      "speed": 7.0,
+      "damage": 35.0,
+      "splashDamage": 45.0,
+      "splashDamageRadius": 40.0,
+      "width": 10.0,
+      "height": 14.0,
+      "lifetime": 32.0,
+      "ammoMultiplier": 5,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+      "frontColor": "ff8e8e",
+      "backColor": "a83232",
+      "hitColor": "a83232"
+    }
+  },
+  "requirements": [
+    { "item": "bronze", "amount": 45 },
+    { "item": "cadmium", "amount": 60 },
+    { "item": "tin", "amount": 40 }
+  ],
+  "category": "turret"
+}
