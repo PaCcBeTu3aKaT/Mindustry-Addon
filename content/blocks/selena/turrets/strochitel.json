@@ -1,0 +1,57 @@
+{
+  "type": "ItemTurret",
+  "name": "Строчитель",
+  "description": "Скорострельный двухблочный пулемёт. Создаёт плотный заградительный огонь, эффективный против больших групп лёгких наземных юнитов.",
+  "size": 2,
+  "health": 650,
+  "reload": 4.0,
+  "range": 170.0,
+  "recoil": 1.5,
+  "shootY": 6.0,
+  "shootCone": 20.0,
+  "inaccuracy": 8.0,
+  "rotateSpeed": 12.0,
+  "ammoUseEffect": "casing1",
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
+  "ammoTypes": {
+    "tin": {
+      "type": "BasicBulletType",
+      "speed": 4.5,
+      "damage": 8.0,
+      "width": 6.0,
+      "height": 10.0,
+      "lifetime": 38.0,
+      "ammoMultiplier": 4,
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
+      "frontColor": "dbe2e6",
+      "backColor": "c0d0d8",
+      "hitColor": "c0d0d8"
+    },
+    "hexogen": {
+      "type": "BasicBulletType",
+      "speed": 5.0,
+      "damage": 18.0,
+      "splashDamage": 10.0,
+      "splashDamageRadius": 12.0,
+      "width": 7.0,
+      "height": 11.0,
+      "lifetime": 34.0,
+      "ammoMultiplier": 6,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+      "frontColor": "ff8e8e",
+      "backColor": "a83232",
+      "hitColor": "a83232"
+    }
+  },
+  "requirements": [
+    { "item": "bronze", "amount": 60 },
+    { "item": "tin", "amount": 80 },
+    { "item": "cadmium", "amount": 50 }
+  ],
+  "category": "turret"
+}
