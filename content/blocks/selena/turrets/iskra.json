@@ -1,16 +1,17 @@
 {
   "type": "ItemTurret",
   "name": "Искра",
-  "description": "Базовая одноствольная турель первого уровня. Используется для защиты на ранних этапах игры.",
+  "description": "Легкая одноствольная турель для точечного прикрытия на ранних этапах. Использует олово и гексоген в качестве боеприпасов.",
   "size": 1,
   "health": 260,
-  "range": 150,
-  "reload": 18,
-  "recoil": 1,
-  "shootY": 3,
-  "shootCone": 15,
-  "inaccuracy": 2,
-  "rotateSpeed": 10,
+  "reload": 18.0,
+  "range": 150.0,
+  "recoil": 1.0,
+  "shootY": 3.0,
+  "shootCone": 15.0,
+  "inaccuracy": 2.0,
+  "rotateSpeed": 10.0,
+  "ammoUseEffect": "casing1",
   "coolant": {
     "type": "ConsumeCoolant",
     "amount": 0.1
@@ -18,53 +19,38 @@
   "ammoTypes": {
     "tin": {
       "type": "BasicBulletType",
-      "speed": 3,
-      "damage": 10,
-      "width": 7,
-      "height": 9,
-      "lifetime": 50,
+      "speed": 3.0,
+      "damage": 11.0,
+      "width": 7.0,
+      "height": 9.0,
+      "lifetime": 50.0,
       "ammoMultiplier": 2,
       "hitEffect": "hitBulletColor",
       "despawnEffect": "hitBulletColor",
-      "frontColor": "ffffff",
+      "frontColor": "dbe2e6",
       "backColor": "c0d0d8",
       "hitColor": "c0d0d8"
     },
-    "tin": {
-      "type": "BasicBulletType",
-      "speed": 3.2,
-      "damage": 14,
-      "width": 8,
-      "height": 10,
-      "lifetime": 47,
-      "ammoMultiplier": 3,
-      "reloadMultiplier": 1.1,
-      "hitEffect": "hitBulletColor",
-      "despawnEffect": "hitBulletColor",
-      "frontColor": "ffffff",
-      "backColor": "9ea8b0",
-      "hitColor": "9ea8b0"
-    },
-    "bronze": {
+    "hexogen": {
       "type": "BasicBulletType",
       "speed": 3.8,
-      "damage": 20,
-      "width": 9,
-      "height": 12,
-      "lifetime": 40,
-      "ammoMultiplier": 4,
-      "rangeChange": 16,
-      "hitEffect": "hitBulletColor",
-      "despawnEffect": "hitBulletColor",
-      "frontColor": "ffffff",
-      "backColor": "d49b4b",
-      "hitColor": "d49b4b"
+      "damage": 28.0,
+      "splashDamage": 15.0,
+      "splashDamageRadius": 16.0,
+      "width": 9.0,
+      "height": 12.0,
+      "lifetime": 40.0,
+      "ammoMultiplier": 3,
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
+      "frontColor": "ff8e8e",
+      "backColor": "a83232",
+      "hitColor": "a83232"
     }
   },
   "requirements": [
-    { "item": "copper", "amount": 25 },
-    { "item": "tin", "amount": 15 }
+    { "item": "tin", "amount": 30 },
+    { "item": "cadmium", "amount": 15 }
   ],
-  "category": "turret",
-  "research": "core-shard"
+  "category": "turret"
 }
