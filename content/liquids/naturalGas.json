@@ -1,0 +1,9 @@
+{
+  "name": "Природный газ",
+  "description": "Горючий газообразный углеводород, добываемый из подземных месторождений.",
+  "color": "c1f2dd",
+  "flammability": 1.5,
+  "explosiveness": 0.8,
+  "gas": true,
+  "coolant": false
+}
