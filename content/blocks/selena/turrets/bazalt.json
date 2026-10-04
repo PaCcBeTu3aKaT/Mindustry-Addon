@@ -112,9 +112,10 @@
     }
   },
   "requirements": [
-    { "item": "chromium", "amount": 110 },
-    { "item": "aluminum", "amount": 90 },
-    { "item": "bronze", "amount": 80 }
+    { "item": "tin", "amount": 250 },
+    { "item": "chromium", "amount": 210 },
+    { "item": "aluminum", "amount": 190 },
+    { "item": "bronze", "amount": 180 }
   ],
   "category": "turret",
   "research": "grom"
