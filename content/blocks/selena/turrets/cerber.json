@@ -26,7 +26,7 @@
   },
   "coolant": {
     "type": "ConsumeCoolant",
-    "amount": 0.6
+    "amount": 0.5
   },
   "ammoTypes": {
     "tin": {
@@ -120,8 +120,8 @@
       "height": 24.0,
       "lifetime": 45.0,
       "ammoMultiplier": 3,
-      "hitEffect": "blastExplosion",
-      "despawnEffect": "blastExplosion",
+      "hitEffect": "hitBulletColor",
+      "despawnEffect": "hitBulletColor",
       "frontColor": "a5d6a7",
       "backColor": "388e3c",
       "hitColor": "388e3c"
@@ -136,8 +136,8 @@
       "height": 26.0,
       "lifetime": 43.0,
       "ammoMultiplier": 4,
-      "hitEffect": "reactorExplosive",
-      "despawnEffect": "reactorExplosive",
+      "hitEffect": "blastExplosion",
+      "despawnEffect": "blastExplosion",
       "frontColor": "ff8e8e",
       "backColor": "a83232",
       "hitColor": "a83232"
