@@ -79,6 +79,7 @@
       "width": 10.0,
       "height": 15.0,
       "lifetime": 23.0,
+      "homingPower": 0.20,
       "ammoMultiplier": 3,
       "reloadMultiplier": 1.2,
       "hitEffect": "hitBulletColor",
