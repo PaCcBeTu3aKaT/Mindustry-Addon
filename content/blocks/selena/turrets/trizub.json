@@ -11,6 +11,10 @@
   "shootCone": 18.0,
   "inaccuracy": 4.0,
   "rotateSpeed": 9.0,
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.3
+  },
   "shoot": {
     "type": "ShootAlternate",
     "barrels": 3,
