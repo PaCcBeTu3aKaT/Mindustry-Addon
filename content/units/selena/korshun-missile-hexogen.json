@@ -3,7 +3,7 @@
   "template": "MissileUnitType",
   "name": "Ракета Коршун (Гексоген)",
   "speed": 4.5,
-  "maxRange": 3.0,
+  "maxRange": 2.0,
   "health": 100,
   "homingDelay": 10.0,
   "lowAltitude": true,
