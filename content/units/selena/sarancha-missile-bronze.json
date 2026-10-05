@@ -1,0 +1,73 @@
+{
+  "type": "missile",
+  "template": "MissileUnitType",
+  "name": "Ракета Саранча (Хром)",
+  "speed": 5.5,
+  "lifetime": 80.0,
+  "maxRange": 2.0,
+  "health": 160,
+  "homingDelay": 4.0,
+  "rotateSpeed": 4.5,
+  "lowAltitude": true,
+  "engineSize": 3.5,
+  "engineColor": "e0e0e0",
+  "trailColor": "cccccc",
+  "engineLayer": 110.0,
+  "deathExplosionEffect": "none",
+  "loopSoundVolume": 0.15,
+  "targetAir": true,
+  "targetGround": true,
+
+  "weapons": [
+    {
+      "shootCone": 360.0,
+      "rotate": false,
+      "mirror": false,
+      "reload": 1.0,
+      "shootOnDeath": true,
+      "shootOnDeathEffect": "massiveExplosion",
+      "bullet": {
+        "type": "ExplosionBulletType",
+        "damage": 650.0,
+        "splashDamage": 600.0,
+        "splashDamageRadius": 22.0,
+        "collidesAir": true,
+        "shootEffect": {
+          "type": "ExplosionEffect",
+          "lifetime": 70.0,
+          "waveStroke": 6.0,
+          "waveLife": 15.0,
+          "waveColor": "ffffff",
+          "sparkColor": "cccccc",
+          "smokeColor": "a0a0a0",
+          "waveRad": 48.0,
+          "smokeSize": 5.0,
+          "smokes": 9,
+          "smokeSizeBase": 0.0,
+          "sparks": 12,
+          "sparkRad": 48.0,
+          "sparkLen": 8.0,
+          "sparkStroke": 2.5
+        },
+
+        "fragBullets": 1,
+        "fragVelocityMin": 0.0,
+        "fragVelocityMax": 0.0,
+        "fragRandomSpread": 0.0,
+        "fragSpread": 0.0,
+        "fragBullet": {
+          "type": "LaserBulletType",
+          "damage": 750.0,
+          "length": 65.0,
+          "width": 8.0,
+          "lifetime": 14.0,
+          "colors": ["cccccc", "ffffff", "ffffff"],
+          "hitEffect": "hitLancer",
+          "sideWidth": 1.5,
+          "sideLength": 14.0,
+          "pierceCap": 6
+        }
+      }
+    }
+  ]
+}
