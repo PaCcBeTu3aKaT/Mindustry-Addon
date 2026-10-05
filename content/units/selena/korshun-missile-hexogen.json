@@ -60,7 +60,7 @@
           "lifetime": 12.0,
           "colors": ["87ceeb", "ffffff", "ffffff"],
           "hitEffect": "hitLancer",
-          "sideAngle": 15.0,
+          "sideAngle": 0.0,
           "sideWidth": 1.0,
           "sideLength": 10.0,
           "pierceCap": 4
