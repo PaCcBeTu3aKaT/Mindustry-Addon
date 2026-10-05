@@ -18,6 +18,7 @@
   "weapons": [
     {
       "shootCone": 360.0,
+      "rotate": false,
       "mirror": false,
       "reload": 1.0,
       "shootOnDeath": true,
@@ -31,7 +32,6 @@
         "suppressionRange": 140.0,
         "shootEffect": {
           "type": "ExplosionEffect",
-          "rotate": false,
           "lifetime": 50.0,
           "waveStroke": 5.0,
           "waveLife": 12.0,
