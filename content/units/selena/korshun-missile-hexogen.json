@@ -15,40 +15,6 @@
   "loopSoundVolume": 0.1,
   "targetAir": false,
   "targetGround": true,
-
-  "parts": [
-    {
-      "type": "ShapePart",
-      "layer": 110.0,
-      "circle": true,
-      "y": -0.25,
-      "radius": 1.5,
-      "color": "87ceeb",
-      "colorTo": "ffffff",
-      "progress": {
-        "type": "life",
-        "op": "curve",
-        "interp": "pow5In"
-      }
-    },
-    {
-      "type": "RegionPart",
-      "suffix": "-fin",
-      "mirror": true,
-      "rotation": -6.0,
-      "moveRot": 32.0,
-      "moveY": 1.5,
-      "x": 0.75,
-      "y": -1.5,
-      "progress": {
-        "type": "life",
-        "op": "curve",
-        "interp": "pow5In",
-        "amount": 3.0
-      }
-    }
-  ],
-
   "weapons": [
     {
       "shootCone": 360.0,
