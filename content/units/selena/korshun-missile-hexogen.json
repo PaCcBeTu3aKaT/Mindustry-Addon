@@ -1,24 +1,53 @@
 {
   "type": "missile",
   "template": "MissileUnitType",
-  "name": "Ракета Коршун (Бронза)",
-  "speed": 5.2,
-  "maxRange": 6.0,
-  "lifetime": 120.0,
-  "hitSize": 6.0,
-  "health": 120,
-  "rotateSpeed": 2.8,
-  "trailLength": 12,
-  "engineColor": "ff8e47",
-  "trailColor": "ff8e47",
-  "engineSize": 2.2,
-  "engineOffset": 5.0,
+  "name": "Ракета Коршун (Гексоген)",
+  "speed": 4.6,
+  "maxRange": 5.0,
+  "health": 70,
+  "homingDelay": 10.0,
   "lowAltitude": true,
-  "loopSound": "loopMissileTrail",
-  "loopSoundVolume": 0.4,
-  "deathSound": "explosionMissile",
-  "targetAir": true,
+  "engineSize": 3.0,
+  "engineColor": "d1efff",
+  "trailColor": "d1efff",
+  "engineLayer": 110.0,
+  "deathExplosionEffect": "none",
+  "loopSoundVolume": 0.1,
+  "targetAir": false,
   "targetGround": true,
+
+  "parts": [
+    {
+      "type": "ShapePart",
+      "layer": 110.0,
+      "circle": true,
+      "y": -0.25,
+      "radius": 1.5,
+      "color": "87ceeb",
+      "colorTo": "ffffff",
+      "progress": {
+        "type": "life",
+        "op": "curve",
+        "interp": "pow5In"
+      }
+    },
+    {
+      "type": "RegionPart",
+      "suffix": "-fin",
+      "mirror": true,
+      "rotation": -6.0,
+      "moveRot": 32.0,
+      "moveY": 1.5,
+      "x": 0.75,
+      "y": -1.5,
+      "progress": {
+        "type": "life",
+        "op": "curve",
+        "interp": "pow5In",
+        "amount": 3.0
+      }
+    }
+  ],
 
   "weapons": [
     {
@@ -26,16 +55,49 @@
       "mirror": false,
       "reload": 1.0,
       "shootOnDeath": true,
-      "shake": 5.0,
+      "shootOnDeathEffect": "massiveExplosion",
       "bullet": {
         "type": "ExplosionBulletType",
-        "damage": 450.0,
-        "splashDamage": 300.0,
-        "splashDamageRadius": 32.0,
-        "killShooter": true,
-        "hitEffect": "massiveExplosion",
-        "despawnEffect": "massiveExplosion"
+        "damage": 140.0,
+        "splashDamageRadius": 25.0,
+        "collidesAir": false,
+        "suppressionRange": 140.0,
+        "shootEffect": {
+          "type": "ExplosionEffect",
+          "lifetime": 50.0,
+          "waveStroke": 5.0,
+          "waveLife": 12.0,
+          "waveColor": "87ceeb",
+          "sparkColor": "87ceeb",
+          "smokeColor": "87ceeb",
+          "waveRad": 40.0,
+          "smokeSize": 4.0,
+          "smokes": 7,
+          "smokeSizeBase": 0.0,
+          "sparks": 10,
+          "sparkRad": 40.0,
+          "sparkLen": 6.0,
+          "sparkStroke": 2.0
+        },
+
+        "fragBullets": 1,
+        "fragVelocityMin": 1.0,
+        "fragVelocityMax": 1.0,
+        "fragRandomSpread": 0.0,
+        "fragSpread": 0.0,
+        "fragBullet": {
+          "type": "LaserBulletType",
+          "damage": 220.0,
+          "length": 45.0,
+          "width": 6.0,
+          "lifetime": 12.0,
+          "colors": ["87ceeb", "ffffff", "ffffff"],
+          "hitEffect": "hitLancer",
+          "sideAngle": 15.0,
+          "sideWidth": 1.0,
+          "sideLength": 10.0,
+          "pierceCap": 4
+        }
       }
     }
   ]
-}
