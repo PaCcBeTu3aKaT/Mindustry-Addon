@@ -51,7 +51,7 @@
       "reloadMultiplier": 0.85,
       "spawnUnit": "sarancha-missile-bronze"
     },
-    "chrome": {
+    "chromium": {
       "type": "BulletType",
       "speed": 0.0,
       "damage": 0.0,
@@ -93,7 +93,7 @@
   "requirements": [
     { "item": "aluminum", "amount": 220 },
     { "item": "bronze", "amount": 140 },
-    { "item": "chrome", "amount": 90 },
+    { "item": "chromium", "amount": 90 },
     { "item": "silicon", "amount": 150 }
   ],
   "category": "turret"
