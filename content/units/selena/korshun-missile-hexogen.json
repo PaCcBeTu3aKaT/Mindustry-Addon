@@ -15,9 +15,8 @@
   "loopSoundVolume": 0.1,
   "targetAir": true,
   "targetGround": true,
- "weapons": [
+  "weapons": [
     {
-      "name": "korshun-explosion",
       "shootCone": 360.0,
       "mirror": false,
       "reload": 1.0,
@@ -26,9 +25,9 @@
       "bullet": {
         "type": "ExplosionBulletType",
         "damage": 450.0,
-        "splashDamage": 200.0,
+        "splashDamage": 300.0,
         "splashDamageRadius": 32.0,
-        "collidesAir": false,
+        "collidesAir": true,
         "suppressionRange": 140.0,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -46,28 +45,26 @@
           "sparkRad": 40.0,
           "sparkLen": 6.0,
           "sparkStroke": 2.0
+        },
+
+        "fragBullets": 1,
+        "fragVelocityMin": 0.0,
+        "fragVelocityMax": 0.0,
+        "fragRandomSpread": 0.0,
+        "fragSpread": 0.0,
+        "fragBullet": {
+          "type": "LaserBulletType",
+          "damage": 250.0,
+          "length": 45.0,
+          "width": 6.0,
+          "lifetime": 12.0,
+          "colors": ["87ceeb", "ffffff", "ffffff"],
+          "hitEffect": "hitLancer",
+          "sideAngle": 15.0,
+          "sideWidth": 1.0,
+          "sideLength": 10.0,
+          "pierceCap": 3
         }
-      }
-    },
-    {
-      "name": "korshun-jet",
-      "shootCone": 360.0,
-      "mirror": false,
-      "inaccuracy": 0.0,
-      "shootOnDeath": true,
-      "bullet": {
-        "type": "LaserBulletType",
-        "damage": 250.0,
-        "length": 50.0,
-        "width": 6.0,
-        "lifetime": 10.0,
-        "colors": ["87ceeb", "ffffff", "ffffff"],
-        "hitEffect": "hitLancer",
-        "sideAngle": 0.0,
-        "sideWidth": 0.0,
-        "sideLength": 0.0,
-        "pierceCap": 4,
-        "collidesAir": true
       }
     }
   ]
