@@ -1,0 +1,100 @@
+{
+  "type": "ItemTurret",
+  "name": "Саранча",
+  "description": "Трёхракетный тяжелый ПТУР. Выпускает залп из трех высокоточных самонаводящихся ракет, способных быстро уничтожать бронегруппы противника.",
+  "size": 3,
+  "health": 1450,
+  "reload": 220.0,
+  "range": 340.0,
+  "recoil": 2.0,
+  "shootY": 6.0,
+  "shootCone": 20.0,
+  "inaccuracy": 2.0,
+  "rotateSpeed": 2.5,
+  "shake": 5.0,
+  "ammoPerShot": 3,
+  "maxAmmo": 30,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "missileLaunch",
+
+  "shoot": {
+    "type": "ShootAlternate",
+    "shots": 3,
+    "shotDelay": 0.0,
+    "barrels": 3,
+    "spread": 6.0
+  },
+
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.4
+  },
+
+  "ammoTypes": {
+    "hexogen": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 1,
+      "spawnUnit": "sarancha-missile-hexogen"
+    },
+    "bronze": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 2,
+      "reloadMultiplier": 0.85,
+      "spawnUnit": "sarancha-missile-bronze"
+    },
+    "chrome": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 2,
+      "reloadMultiplier": 1.15,
+      "spawnUnit": "sarancha-missile-chrome"
+    }
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-missile-l",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-missile-m",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-missile-r",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      }
+    ]
+  },
+
+  "requirements": [
+    { "item": "aluminum", "amount": 220 },
+    { "item": "bronze", "amount": 140 },
+    { "item": "chrome", "amount": 90 },
+    { "item": "silicon", "amount": 150 }
+  ],
+  "category": "turret"
+}
