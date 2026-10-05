@@ -1,7 +1,7 @@
 {
   "type": "ItemTurret",
   "name": "Саранча",
-  "description": "Трёхракетный тяжелый ПТУР. Выпускает залп из трех высокоточных самонаводящихся ракет, способных быстро уничтожать бронегруппы противника.",
+  "description": "Трёхракетный тяжелый ПТРК. Выпускает залп из трех высокоточных самонаводящихся ракет, способных быстро уничтожать бронегруппы противника.",
   "size": 3,
   "health": 1450,
   "reload": 220.0,
@@ -48,7 +48,6 @@
       "shootEffect": "shootBig",
       "smokeEffect": "shootSmokeMissileColor",
       "ammoMultiplier": 2,
-      "reloadMultiplier": 0.85,
       "spawnUnit": "sarancha-missile-bronze"
     },
     "chromium": {
