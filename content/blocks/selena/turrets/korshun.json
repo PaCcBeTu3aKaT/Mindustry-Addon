@@ -1,0 +1,68 @@
+{
+  "type": "ItemTurret",
+  "name": "Коршун",
+  "description": "Легкий ПТУР. Выпускает среднюю самонаводящуюся ракету с высоким уроном при детонации.",
+  "size": 2,
+  "health": 680,
+  "reload": 9
+  0.0,
+  "range": 280.0,
+  "recoil": 1.5,
+  "shootY": 4.0,
+  "shootCone": 15.0,
+  "inaccuracy": 0.0,
+  "rotateSpeed": 3.5,
+  "shake": 3.0,
+  "ammoPerShot": 2,
+  "maxAmmo": 20,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "missileLaunch",
+
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
+
+  "ammoTypes": {
+    "hexogen": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 1,
+      "spawnUnit": "korshun-missile-hexogen"
+    },
+    "bronze": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 2,
+      "reloadMultiplier": 0.9,
+      "spawnUnit": "korshun-missile-bronze"
+    }
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-missile",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      }
+    ]
+  },
+
+  "requirements": [
+    { "item": "aluminum", "amount": 100 },
+    { "item": "bronze", "amount": 60 },
+    { "item": "silicon", "amount": 80 }
+  ],
+  "category": "turret"
+}
