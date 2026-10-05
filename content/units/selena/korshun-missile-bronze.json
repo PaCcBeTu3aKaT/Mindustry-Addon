@@ -1,7 +1,7 @@
 {
   "type": "missile",
   "template": "MissileUnitType",
-  "name": "Ракета Коршун (Гексоген)",
+  "name": "Ракета Коршун (Бронза)",
   "speed": 4.5,
   "lifetime": 65.0,
   "maxRange": 2.0,
