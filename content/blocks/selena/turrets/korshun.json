@@ -6,7 +6,7 @@
   "health": 700,
   "reload": 150
   "inaccuracy": 0.0,
-  "range": 280.0,
+  "range": 200.0,
   "recoil": 1.5,
   "shootY": 4.0,
   "shootCone": 15.0,
