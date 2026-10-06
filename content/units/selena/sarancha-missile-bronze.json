@@ -4,7 +4,7 @@
   "name": "Ракета Саранча (хром)",
   "speed": 5.5,
   "lifetime": 70.0,
-  "health": 160,
+  "health": 300,
   "homingDelay": 4.0,
   "rotateSpeed": 4.5,
   "lowAltitude": true,
@@ -64,7 +64,7 @@
           "hitEffect": "hitLancer",
           "sideWidth": 1.5,
           "sideLength": 14.0,
-          "pierceCap": 6
+          "pierceCap": 5
         }
       }
     }
