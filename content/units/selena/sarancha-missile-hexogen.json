@@ -50,6 +50,7 @@
         },
 
         "fragBullets": 1,
+        "moveY": -14.0
         "fragVelocityMin": 0.0,
         "fragVelocityMax": 0.0,
         "fragRandomSpread": 0.0,
