@@ -1,10 +1,9 @@
 {
   "type": "missile",
   "template": "MissileUnitType",
-  "name": "Ракета Саранча (Хром)",
+  "name": "Ракета Саранча (хром)",
   "speed": 5.5,
-  "lifetime": 80.0,
-  "maxRange": 2.0,
+  "lifetime": 70.0,
   "health": 160,
   "homingDelay": 4.0,
   "rotateSpeed": 4.5,
@@ -28,9 +27,9 @@
       "shootOnDeathEffect": "massiveExplosion",
       "bullet": {
         "type": "ExplosionBulletType",
-        "damage": 650.0,
-        "splashDamage": 600.0,
-        "splashDamageRadius": 22.0,
+        "damage": 480.0,
+        "splashDamage": 480.0,
+        "splashDamageRadius": 20.0,
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -57,8 +56,8 @@
         "fragSpread": 0.0,
         "fragBullet": {
           "type": "LaserBulletType",
-          "damage": 750.0,
-          "length": 65.0,
+          "damage": 480.0,
+          "length": 90.0,
           "width": 8.0,
           "lifetime": 14.0,
           "colors": ["cccccc", "ffffff", "ffffff"],
