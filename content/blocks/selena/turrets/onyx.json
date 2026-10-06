@@ -3,7 +3,7 @@
   "name": "Оникс",
   "description": "Сверхточное зенитно-артиллерийское орудие. Обладает рекордной дальнобойностью, идеальной точностью и колоссальным разовым уроном. Уничтожает тяжелые наземные цели и летающие титаны с предельного расстояния.",
   "size": 4,
-  "health": 3800,
+  "health": 5200,
   "reload": 400.0,
   "range": 420.0,
   "recoil": 6.0,
@@ -35,9 +35,9 @@
   "ammoTypes": {
     "ferroAlloy": {
       "type": "ArtilleryBulletType",
-      "speed": 20.0,
-      "damage": 700.0,
-      "splashDamage": 700.0,
+      "speed": 22.0,
+      "damage": 1200.0,
+      "splashDamage": 1200.0,
       "splashDamageRadius": 48.0,
       "width": 18.0,
       "height": 24.0,
@@ -64,9 +64,9 @@
     },
     "cobalt-60": {
       "type": "ArtilleryBulletType",
-      "speed": 17.5,
-      "damage": 850.0,
-      "splashDamage": 850.0,
+      "speed": 20.0,
+      "damage": 1300.0,
+      "splashDamage": 1300.0,
       "splashDamageRadius": 84.0,
       "width": 16.0,
       "height": 22.0,
@@ -76,7 +76,7 @@
       "collidesAir": true,
       "collidesTiles": true,
       "knockback": 2.0,
-      "status": "blasted",
+      "status": "melting",
       "statusDuration": 300.0,
       "trailLength": 14,
       "trailWidth": 3.0,
@@ -95,9 +95,9 @@
     },
     "hexogen": {
       "type": "ArtilleryBulletType",
-      "speed": 15.0,
-      "damage": 750.0,
-      "splashDamage": 750.0,
+      "speed": 20.0,
+      "damage": 1200.0,
+      "splashDamage": 1200.0,
       "splashDamageRadius": 60.0,
       "width": 17.0,
       "height": 22.0,
@@ -120,9 +120,9 @@
         ]
       },
       "despawnEffect": "blastExplosion",
-      "frontColor": "ff8e8e",
-      "backColor": "a83232",
-      "hitColor": "a83232"
+      "frontColor": "#ffe603",
+      "backColor": "#ffae00",
+      "hitColor": "#ffae00"
     }
   },
   "requirements": [
