@@ -1,0 +1,104 @@
+{
+  "type": "ItemTurret",
+  "name": "Жнец",
+  "description": "Тяжелый ПТРК. Залпами из двух сверхманевренных тяжелых ракет уничтожает супер-юнитов и элитную технику противника.",
+  "size": 4,
+  "health": 5200,
+  "reload": 360.0,
+  "range": 420.0,
+  "recoil": 3.0,
+  "shootY": 10.0,
+  "shootCone": 25.0,
+  "inaccuracy": 1.0,
+  "rotateSpeed": 1.8,
+  "shake": 8.0,
+  "ammoPerShot": 4,
+  "maxAmmo": 40,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "missileLaunch",
+
+  "shoot": {
+    "type": "ShootAlternate",
+    "shots": 2,
+    "shotDelay": 0.0,
+    "barrels": 2,
+    "spread": 12.0
+  },
+
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.3
+  },
+
+  "ammoTypes": {
+    "hexogen": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 1,
+      "spawnUnit": "zhnec-missile-hexogen"
+    },
+    "cobalt-60": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 1,
+      "reloadMultiplier": 1.0,
+      "spawnUnit": "zhnec-missile-cobalt"
+    },
+    "chromium": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 2,
+      "reloadMultiplier": 1.0,
+      "spawnUnit": "zhnec-missile-chrome"
+    },
+    "ferro-alloy": {
+      "type": "BulletType",
+      "speed": 0.0,
+      "damage": 0.0,
+      "shootEffect": "shootBig",
+      "smokeEffect": "shootSmokeMissileColor",
+      "ammoMultiplier": 2,
+      "reloadMultiplier": 1.1,
+      "spawnUnit": "zhnec-missile-ferro"
+    }
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-missile-l",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-missile-r",
+        "progress": "reload",
+        "colorTo": "ffffff00",
+        "under": true
+      }
+    ]
+  },
+
+  "requirements": [
+    { "item": "aluminum", "amount": 450 },
+    { "item": "bronze", "amount": 300 },
+    { "item": "chromium", "amount": 200 },
+    { "item": "cobalt", "amount": 160 },
+    { "item": "silicon", "amount": 350 }
+  ],
+  "category": "turret"
+}
