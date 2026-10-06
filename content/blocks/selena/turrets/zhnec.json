@@ -61,7 +61,7 @@
       "reloadMultiplier": 1.0,
       "spawnUnit": "zhnec-missile-chrome"
     },
-    "ferro-alloy": {
+    "ferroAlloy": {
       "type": "BulletType",
       "speed": 0.0,
       "damage": 0.0,
