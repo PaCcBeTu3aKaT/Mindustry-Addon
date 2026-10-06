@@ -64,7 +64,7 @@
           "hitEffect": "hitLancer",
           "sideWidth": 2.5,
           "sideLength": 20.0,
-          "pierceCap": 10
+          "pierceCap": 15
         }
       }
     }
