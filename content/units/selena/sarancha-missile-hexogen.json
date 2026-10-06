@@ -20,6 +20,7 @@
   "weapons": [
     {
       "shootCone": 360.0,
+      "moveY": -14.0
       "rotate": false,
       "mirror": false,
       "reload": 1.0,
@@ -50,7 +51,6 @@
         },
 
         "fragBullets": 1,
-        "moveY": -14.0
         "fragVelocityMin": 0.0,
         "fragVelocityMax": 0.0,
         "fragRandomSpread": 0.0,
