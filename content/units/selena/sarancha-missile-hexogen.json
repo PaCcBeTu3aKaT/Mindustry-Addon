@@ -20,7 +20,6 @@
   "weapons": [
     {
       "shootCone": 360.0,
-      "moveY": -14.0
       "rotate": false,
       "mirror": false,
       "reload": 1.0,
@@ -28,7 +27,7 @@
       "shootOnDeathEffect": "massiveExplosion",
       "bullet": {
         "type": "ExplosionBulletType",
-        "damage": 7000.0,
+        "damage": 700.0,
         "splashDamage": 700.0,
         "splashDamageRadius": 22.0,
         "collidesAir": true,
