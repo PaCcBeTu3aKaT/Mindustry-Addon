@@ -3,7 +3,7 @@
   "template": "MissileUnitType",
   "name": "Тяжелая ракета Жнец (Кобальт-60)",
   "speed": 7.0,
-  "lifetime": 90.0,
+  "lifetime": 100.0,
   "health": 850,
   "homingDelay": 0.0,
   "rotateSpeed": 12.0,
@@ -28,8 +28,8 @@
       "bullet": {
         "type": "ExplosionBulletType",
         "damage": 1200.0,
-        "splashDamage": 1100.0,
-        "splashDamageRadius": 35.0,
+        "splashDamage": 1200.0,
+        "splashDamageRadius": 45.0,
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -56,8 +56,8 @@
         "fragSpread": 0.0,
         "fragBullet": {
           "type": "LaserBulletType",
-          "damage": 1400.0,
-          "length": 120.0,
+          "damage": 1200.0,
+          "length": 150.0,
           "width": 12.0,
           "lifetime": 16.0,
           "colors": ["536dfe", "8c9eff", "ffffff"],
