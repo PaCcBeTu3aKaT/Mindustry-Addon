@@ -27,9 +27,9 @@
       "shootOnDeathEffect": "massiveExplosion",
       "bullet": {
         "type": "ExplosionBulletType",
-        "damage": 700.0,
-        "splashDamage": 700.0,
-        "splashDamageRadius": 22.0,
+        "damage": 500.0,
+        "splashDamage": 500.0,
+        "splashDamageRadius": 20.0,
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -56,7 +56,7 @@
         "fragSpread": 0.0,
         "fragBullet": {
           "type": "LaserBulletType",
-          "damage": 700.0,
+          "damage": 600.0,
           "length": 75.0,
           "width": 8.0,
           "lifetime": 14.0,
