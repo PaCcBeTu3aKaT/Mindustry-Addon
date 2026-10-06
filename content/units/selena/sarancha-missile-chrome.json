@@ -29,7 +29,7 @@
         "type": "ExplosionBulletType",
         "damage": 500.0,
         "splashDamage": 500.0,
-        "splashDamageRadius": 15.0,
+        "splashDamageRadius": 20.0,
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
