@@ -5,7 +5,7 @@
   "size": 4,
   "health": 5200,
   "reload": 360.0,
-  "range": 420.0,
+  "range": 470.0,
   "recoil": 3.0,
   "shootY": 10.0,
   "shootCone": 25.0,
