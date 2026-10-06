@@ -1,7 +1,7 @@
 {
   "type": "missile",
   "template": "MissileUnitType",
-  "name": "Ракета Саранча (хром)",
+  "name": "Ракета Саранча (бронза)",
   "speed": 5.5,
   "lifetime": 70.0,
   "health": 300,
