@@ -145,7 +145,7 @@
     { "item": "chromium", "amount": 350 },
     { "item": "aluminum", "amount": 300 },
     { "item": "silicon", "amount": 250 },
-    { "item": "tin", "amount": 150 }
+    { "item": "tin", "amount": 450 }
   ],
   "category": "turret",
   "research": "plazmoid"
