@@ -133,4 +133,5 @@
     { "item": "aluminum", "amount": 300 }
   ],
   "category": "turret"
+  "research": "bazalt"
 }
