@@ -73,10 +73,10 @@
   },
 
   "requirements": [
+    { "item": "tin", "amount": 200 },
     { "item": "chromium", "amount": 180 },
     { "item": "aluminum", "amount": 170 },
-    { "item": "silicon", "amount": 160 },
-    { "item": "tin", "amount": 200 }
+    { "item": "silicon", "amount": 160 }
   ],
   "category": "turret",
   "research": "ozhog"
