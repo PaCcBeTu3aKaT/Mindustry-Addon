@@ -33,10 +33,11 @@
   },
 
   "requirements": [
-    { "item": "aluminum", "amount": 80 },
+    { "item": "tin", "amount": 80 },
+    { "item": "aluminium", "amount": 50 },
     { "item": "bronze", "amount": 40 },
     { "item": "silicon", "amount": 30 }
   ],
   "category": "turret",
-  "research": "aluminum"
+  "research": "razryad"
 }
