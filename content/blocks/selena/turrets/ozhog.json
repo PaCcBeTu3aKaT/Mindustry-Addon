@@ -1,48 +1,42 @@
 {
   "type": "ContinuousTurret",
   "name": "Ожог",
-  "category": "turret",
+  "description": "Непрерывный лазерный луч на среднюю дистанцию. Накладывает эффект плавления, разъедая броню целей. Универсальная турель для поражения лёгкой и средней техники.",
   "size": 2,
-  "scaledHealth": 220,
+  "health": 880,
   "range": 150.0,
   "recoil": 0.0,
   "shake": 0.0,
+  "rotateSpeed": 2.5,
+  "shootY": 0.5,
+  "shootCone": 360.0,
+  "shootWarmupSpeed": 0.8,
+  "aimChangeSpeed": 0.9,
   "targetAir": true,
   "targetGround": true,
   "scaleDamageEfficiency": true,
+  "unitSort": "strongest",
   "shootSound": "none",
   "loopSound": "beamLustre",
   "loopSoundVolume": 1.0,
-  "shootWarmupSpeed": 0.08,
-  "shootCone": 360.0,
-  "aimChangeSpeed": 0.9,
-  "rotateSpeed": 2.5,
-  "shootY": 0.5,
-  "unitSort": "strongest",
-  "liquidCapacity": 30.0,
 
   "consumes": {
     "power": 5.0
   },
 
-  "coolant": {
-    "type": "ConsumeCoolant",
-    "amount": 0.2
-  },
-
   "shootType": {
     "type": "PointLaserBulletType",
-    "damage": 22.0,
-    "buildingDamageMultiplier": 0.5,
+    "damage": 23.0,
     "status": "melting",
     "pierceArmor": true,
     "hitColor": "ff9c5a"
   },
 
-  "research": "aluminum",
   "requirements": [
     { "item": "aluminum", "amount": 80 },
     { "item": "bronze", "amount": 40 },
     { "item": "silicon", "amount": 30 }
-  ]
+  ],
+  "category": "turret",
+  "research": "aluminum"
 }
