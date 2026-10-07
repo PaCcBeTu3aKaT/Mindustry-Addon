@@ -1,0 +1,154 @@
+{
+  "type": "LaserTurret",
+  "name": "Аннигилятор",
+  "description": "Орудие конца игры. Несколько секунд стягивает вспомогательные лучи в одну точку, затем выпускает колоссальный гипер-луч, который прожигает силовые щиты, броню, блоки и юнитов по всей длине. Накладывает плавление и поджигает всё на пути. Без воды или криогенной жидкости не перезаряжается.",
+  "size": 4,
+  "health": 4400,
+  "range": 360.0,
+  "reload": 290.0,
+  "shootDuration": 110.0,
+  "firingMoveFract": 0.3,
+  "recoil": 6.0,
+  "shake": 5.0,
+  "shootY": 16.0,
+  "shootCone": 12.0,
+  "rotateSpeed": 0.9,
+  "shootWarmupSpeed": 0.012,
+  "moveWhileCharging": false,
+  "accurateDelay": false,
+  "targetAir": true,
+  "targetGround": true,
+  "unitSort": "strongest",
+  "liquidCapacity": 120.0,
+  "heatColor": "ff5a2e",
+  "shootEffect": "shootBigSmoke2",
+  "shootSound": "shootMeltdown",
+  "chargeSound": "chargeLancer",
+  "loopSound": "beamMeltdown",
+  "loopSoundVolume": 2.0,
+
+  "shoot": {
+    "type": "ShootPattern",
+    "firstShotDelay": 210.0
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-mirror",
+        "mirror": true,
+        "progress": "warmup",
+        "moveX": 5.0,
+        "moveRot": -22.0,
+        "heatProgress": "warmup",
+        "heatColor": "ff5a2e",
+        "layerOffset": 0.001
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-ring",
+        "progress": "warmup",
+        "moveRot": 360.0,
+        "heatProgress": "warmup",
+        "heatColor": "ff5a2e"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-crystal",
+        "progress": "warmup",
+        "heatProgress": "warmup",
+        "heatColor": "ff5a2e"
+      }
+    ]
+  },
+
+  "consumes": {
+    "power": 40.0,
+    "coolant": {
+      "amount": 0.8
+    }
+  },
+
+  "shootType": {
+    "type": "ContinuousLaserBulletType",
+    "damage": 950.0,
+    "length": 380.0,
+    "width": 26.0,
+    "largeHit": true,
+    "laserAbsorb": false,
+    "pierceArmor": true,
+    "timescaleDamage": true,
+    "buildingDamageMultiplier": 0.5,
+    "status": "melting",
+    "statusDuration": 480.0,
+    "incendChance": 0.5,
+    "incendSpread": 8.0,
+    "incendAmount": 2,
+    "ammoMultiplier": 1.0,
+    "drawSize": 820.0,
+    "hitEffect": "hitMeltdown",
+    "hitColor": "ff7a45",
+    "colors": ["ff4d2e55", "ff4d2eaa", "ff9c5a", "ffffff"],
+
+    "chargeEffect": {
+      "type": "MultiEffect",
+      "effects": [
+        {
+          "type": "ParticleEffect",
+          "particles": 8,
+          "line": true,
+          "randLength": false,
+          "useRotation": false,
+          "cone": 180.0,
+          "baseLength": 130.0,
+          "length": -130.0,
+          "lifetime": 210.0,
+          "interp": "pow2In",
+          "strokeFrom": 3.0,
+          "strokeTo": 1.0,
+          "lenFrom": 26.0,
+          "lenTo": 10.0,
+          "colorFrom": "ff9c5a",
+          "colorTo": "ffffff"
+        },
+        {
+          "type": "WaveEffect",
+          "lifetime": 210.0,
+          "sizeFrom": 70.0,
+          "sizeTo": 0.0,
+          "strokeFrom": 0.5,
+          "strokeTo": 4.0,
+          "interp": "pow2In",
+          "colorFrom": "ff4d2e",
+          "colorTo": "ffffff"
+        },
+        {
+          "type": "ParticleEffect",
+          "particles": 1,
+          "randLength": false,
+          "useRotation": false,
+          "baseLength": 0.0,
+          "length": 0.0,
+          "lifetime": 210.0,
+          "interp": "pow3In",
+          "sizeFrom": 0.0,
+          "sizeTo": 16.0,
+          "colorFrom": "ff4d2e",
+          "colorTo": "ffffff"
+        }
+      ]
+    }
+  },
+
+  "requirements": [
+    { "item": "cobalt", "amount": 500 },
+    { "item": "chrome", "amount": 350 },
+    { "item": "aluminum", "amount": 300 },
+    { "item": "silicon", "amount": 250 },
+    { "item": "hexogen", "amount": 150 }
+  ],
+  "category": "turret",
+  "research": "cobalt"
+}
