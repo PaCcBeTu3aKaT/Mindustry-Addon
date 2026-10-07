@@ -144,7 +144,7 @@
 
   "requirements": [
     { "item": "cobalt", "amount": 500 },
-    { "item": "chrome", "amount": 350 },
+    { "item": "chromium", "amount": 350 },
     { "item": "aluminum", "amount": 300 },
     { "item": "silicon", "amount": 250 },
     { "item": "hexogen", "amount": 150 }
