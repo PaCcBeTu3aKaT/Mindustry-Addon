@@ -29,6 +29,7 @@
         "damage": 500.0,
         "splashDamage": 500.0,
         "splashDamageRadius": 15.0,
+        "status": "blasted",
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -57,6 +58,7 @@
           "type": "LaserBulletType",
           "damage": 500.0,
           "length": 45.0,
+          "status": "melting",
           "width": 6.0,
           "lifetime": 12.0,
           "colors": ["87ceeb", "ffffff", "ffffff"],
