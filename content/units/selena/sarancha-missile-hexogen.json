@@ -30,6 +30,7 @@
         "damage": 550.0,
         "splashDamage": 550.0,
         "splashDamageRadius": 25.0,
+        "blasted",
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
