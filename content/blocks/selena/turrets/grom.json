@@ -44,7 +44,7 @@
   },
   "coolant": {
     "type": "ConsumeCoolant",
-    "amount": 0.25
+    "amount": 0.2
   },
   "ammoTypes": {
     "cadmium": {
