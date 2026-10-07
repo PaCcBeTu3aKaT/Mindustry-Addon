@@ -21,7 +21,7 @@
     "parts": [
       {
         "type": "RegionPart",
-        "suffix": "barrel",
+        "suffix": "-barrel",
         "progress": "recoil",
         "under": true,
         "moveY": -6.0
