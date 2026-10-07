@@ -1,0 +1,81 @@
+{
+  "type": "PowerTurret",
+  "name": "Плазмоид",
+  "description": "Трёхствольная энерго-турель. Выпускает залп из трёх мощных энергоболтов на среднюю дистанцию. Очень высокий мгновенный урон при средней скорости перезарядки.",
+  "size": 3,
+  "health": 1500,
+  "reload": 90.0,
+  "range": 220.0,
+  "recoil": 3.0,
+  "shootY": 8.0,
+  "shootCone": 15.0,
+  "inaccuracy": 2.0,
+  "rotateSpeed": 4.0,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "shootLasher",
+
+  "shoot": {
+    "type": "ShootAlternate",
+    "barrels": 3,
+    "shots": 3,
+    "spread": 6.0
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-l",
+        "progress": "recoil",
+        "recoilIndex": 0,
+        "under": true,
+        "moveY": -3.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-m",
+        "progress": "recoil",
+        "recoilIndex": 1,
+        "under": true,
+        "moveY": -3.0
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "barrel-r",
+        "progress": "recoil",
+        "recoilIndex": 2,
+        "under": true,
+        "moveY": -3.0
+      }
+    ]
+  },
+
+  "consumes": {
+    "power": 6.5
+  },
+
+  "shootType": {
+    "type": "LaserBoltBulletType",
+    "speed": 5.5,
+    "lifetime": 40.0,
+    "damage": 70.0,
+    "width": 8.0,
+    "height": 12.0,
+    "healPercent": 0.0,
+    "collidesTeam": false,
+    "frontColor": "ffffff",
+    "backColor": "7fd4ff",
+    "hitColor": "7fd4ff"
+  },
+
+  "requirements": [
+    { "item": "chrome", "amount": 80 },
+    { "item": "aluminum", "amount": 70 },
+    { "item": "silicon", "amount": 60 },
+    { "item": "bronze", "amount": 50 }
+  ],
+  "category": "turret",
+  "research": "ozhog"
+}
