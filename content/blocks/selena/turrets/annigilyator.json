@@ -72,9 +72,9 @@
 
   "shootType": {
     "type": "ContinuousLaserBulletType",
-    "damage": 800.0,
+    "damage": 700.0,
     "length": 380.0,
-    "width": 6.0,
+    "width": 3.0,
     "largeHit": true,
     "laserAbsorb": false,
     "pierceArmor": true,
