@@ -5,7 +5,7 @@
   "size": 3,
   "health": 1500,
   "reload": 100.0,
-  "range": 220.0,
+  "range": 300.0,
   "recoil": 3.0,
   "shootY": 8.0,
   "shootCone": 15.0,
@@ -62,10 +62,11 @@
   "shootType": {
     "type": "LaserBoltBulletType",
     "speed": 15.0,
-    "lifetime": 40.0,
-    "damage": 200.0,
+    "lifetime": 21.0,
+    "damage": 180.0,
     "width": 2.0,
     "height": 20.0,
+    "pierceCap": 5,
     "frontColor": "ffffff",
     "backColor": "7fd4ff",
     "hitColor": "7fd4ff"
