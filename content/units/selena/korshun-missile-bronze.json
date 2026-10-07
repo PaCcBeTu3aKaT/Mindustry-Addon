@@ -29,6 +29,7 @@
         "damage": 400.0,
         "splashDamage": 400.0,
         "splashDamageRadius": 10.0,
+        "status": "blasted",
         "collidesAir": true,
         "shootEffect": {
           "type": "ExplosionEffect",
@@ -56,6 +57,7 @@
         "fragBullet": {
           "type": "LaserBulletType",
           "damage": 400.0,
+          "status": "melting",
           "length": 45.0,
           "width": 6.0,
           "lifetime": 12.0,
