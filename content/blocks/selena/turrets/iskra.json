@@ -16,6 +16,18 @@
     "type": "ConsumeCoolant",
     "amount": 0.1
   },
+    "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "progress": "recoil",
+        "under": true,
+        "moveY": -3.0
+      }
+    ]
+  },
   "ammoTypes": {
     "tin": {
       "type": "BasicBulletType",
