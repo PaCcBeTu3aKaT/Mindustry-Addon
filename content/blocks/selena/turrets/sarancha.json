@@ -96,4 +96,5 @@
     { "item": "silicon", "amount": 150 }
   ],
   "category": "turret"
+  "research": "korshun"
 }
