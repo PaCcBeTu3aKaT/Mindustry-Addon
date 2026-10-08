@@ -114,5 +114,6 @@
     { "item": "bronze", "amount": 50 },
     { "item": "tin", "amount": 75 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "dvuden"
 }
