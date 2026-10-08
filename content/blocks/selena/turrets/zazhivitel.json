@@ -1,0 +1,25 @@
+{
+  "type": "RepairTurret",
+  "name": "Заживитель",
+  "description": "Ремонтная турель поддержки. Непрерывным фокусированным лучом наводится на повреждённых союзных юнитов в зоне действия и восстанавливает их здоровье. Вода и криогенная жидкость ускоряют темп и эффективность ремонта.",
+  "size": 3,
+  "health": 1600,
+  "length": 9.0,
+  "repairSpeed": 5.0,
+  "repairRadius": 200.0,
+  "beamWidth": 1.4,
+  "pulseRadius": 8.0,
+  "powerUse": 8.0,
+  "acceptCoolant": true,
+  "coolantUse": 0.25,
+  "coolantMultiplier": 2.0,
+  "ambientSoundVolume": 1.25,
+
+  "requirements": [
+    { "item": "aluminum", "amount": 100 },
+    { "item": "silicon", "amount": 90 },
+    { "item": "bronze", "amount": 60 }
+  ],
+  "category": "turret",
+  "research": "aluminum"
+}
