@@ -176,4 +176,5 @@
     { "item": "aluminum", "amount": 250 }
   ],
   "category": "turret"
+  "research": "dvuden"
 }
