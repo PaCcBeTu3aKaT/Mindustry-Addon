@@ -20,7 +20,10 @@
   "consumes": {
     "power": 6.0
   },
-
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
   "shootType": {
     "type": "FlakBulletType",
     "sprite": "missile-large",
