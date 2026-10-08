@@ -18,7 +18,7 @@
   "heatColor": "ff7a45",
   "shootSound": "shootFlame",
   "ammoTypes": {
-    "natural-gas": {
+    "naturalGas": {
       "type": "BulletType",
       "speed": 3.8,
       "lifetime": 24,
