@@ -100,4 +100,5 @@
     { "item": "tin", "amount": 40 }
   ],
   "category": "turret"
+  "research": "iskra"
 }
