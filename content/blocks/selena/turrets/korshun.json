@@ -64,5 +64,6 @@
     { "item": "bronze", "amount": 60 },
     { "item": "silicon", "amount": 80 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "dvuden"
 }
