@@ -53,5 +53,6 @@
     { "item": "tin", "amount": 80 },
     { "item": "cadmium", "amount": 50 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "iskra"
 }
