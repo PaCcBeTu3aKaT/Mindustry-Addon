@@ -1,7 +1,7 @@
 {
 "name": "Хром",
 "hardness": 4,
-"color": "f2e8c9",
+"color": "00B2A9",
 "research": {
  "parent": "aluminum"
 }
