@@ -1,0 +1,87 @@
+{
+  "type": "ItemTurret",
+  "name": "Щель",
+  "description": "Четырёхнаправленный плазмомет. Работает на кадмии и водороде. Очень быстро выпускает крест из четырёх плазменных снарядов, каждый из которых в конце полёта взрывается и разлетается на шесть осколков. Создаёт плотную взрывную зону вокруг турели для защиты важных узлов базы.",
+  "size": 3,
+  "health": 1900,
+  "reload": 9.0,
+  "range": 120.0,
+  "recoil": 2.0,
+  "shootY": 0.0,
+  "shootCone": 40.0,
+  "inaccuracy": 2.0,
+  "rotateSpeed": 10.0,
+  "liquidCapacity": 30.0,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "shootSalvo",
+
+  "shoot": {
+    "type": "ShootBarrel",
+    "shots": 4,
+    "barrels": [
+      0.0, 8.0, 0.0,
+      8.0, 0.0, -90.0,
+      0.0, -8.0, 180.0,
+      -8.0, 0.0, 90.0
+    ]
+  },
+
+  "consumes": {
+    "liquid": {
+      "liquid": "hydrogen",
+      "amount": 0.1
+    }
+  },
+
+  "ammoTypes": {
+    "cadmium": {
+      "type": "BasicBulletType",
+      "speed": 7.5,
+      "lifetime": 13.5,
+      "damage": 20.0,
+      "splashDamage": 30.0,
+      "splashDamageRadius": 30.0,
+      "width": 9.0,
+      "height": 12.0,
+      "ammoMultiplier": 6,
+      "despawnHit": true,
+      "collidesTeam": false,
+      "hitEffect": "flakExplosion",
+      "despawnEffect": "flakExplosion",
+      "frontColor": "f3e1ff",
+      "backColor": "c77dff",
+      "hitColor": "c77dff",
+      "fragBullets": 6,
+      "fragRandomSpread": 0.0,
+      "fragSpread": 60.0,
+      "fragVelocityMin": 0.6,
+      "fragVelocityMax": 1.0,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "speed": 3.5,
+        "lifetime": 16.0,
+        "damage": 14.0,
+        "splashDamage": 8.0,
+        "splashDamageRadius": 16.0,
+        "width": 5.0,
+        "height": 7.0,
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor",
+        "frontColor": "f3e1ff",
+        "backColor": "c77dff",
+        "hitColor": "c77dff"
+      }
+    }
+  },
+
+  "requirements": [
+    { "item": "chromium", "amount": 100 },
+    { "item": "chromium", "amount": 100 },
+    { "item": "cadmium", "amount": 80 },
+    { "item": "aluminum", "amount": 90 },
+    { "item": "silicon", "amount": 70 }
+  ],
+  "category": "turret",
+  "research": "fakel"
+}
