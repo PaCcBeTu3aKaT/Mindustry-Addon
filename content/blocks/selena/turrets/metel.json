@@ -29,9 +29,13 @@
     "speed": 5.5,
     "lifetime": 58.0,
     "scaleLife": true,
-    "damage": 90.0,
-    "splashDamage": 90.0,
+    "damage": 100.0,
+    "splashDamage": 100.0,
     "splashDamageRadius": 100.0,
+    "timeIncrease": 0.0,
+    "timeDuration": 0.0,
+    "unitDamageScl": 1.0,
+    "powerDamageScl": 0.0,
     "width": 12.0,
     "height": 12.0,
     "shrinkY": 0.0,
@@ -176,26 +180,11 @@
     }
   },
   "requirements": [
-    {
-      "item": "tin",
-      "amount": 400
-    },
-    {
-      "item": "cobalt",
-      "amount": 400
-    },
-    {
-      "item": "chromium",
-      "amount": 300
-    },
-    {
-      "item": "aluminum",
-      "amount": 300
-    },
-    {
-      "item": "silicon",
-      "amount": 250
-    }
+    { "item": "tin", "amount": 400 },
+    { "item": "cobalt", "amount": 400 },
+    { "item": "chromium", "amount": 300 },
+    { "item": "aluminum", "amount": 300 },
+    { "item": "silicon", "amount": 250 }
   ],
   "category": "turret",
   "research": "impuls"
