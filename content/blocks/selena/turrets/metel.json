@@ -18,7 +18,7 @@
   "shootSound": "shootNavanax",
 
   "consumes": {
-    "power": 18.0
+    "power": 14.0
   },
   "coolant": {
     "type": "ConsumeCoolant",
