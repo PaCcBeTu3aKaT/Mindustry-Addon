@@ -3,7 +3,7 @@
   "name": "Метель",
   "description": "АоЕ-полевое плазменное орудие. Стреляет сфокусированным сгустком на большую дистанцию. В конечной точке снаряд взрывается ЭМИ-ударом и на несколько секунд оставляет электрическое поле, которое жжёт и оглушает шоком всех врагов внутри. Блокирует узкие проходы и выжигает крупные бронированные скопления.",
   "size": 4,
-  "health": 4600,
+  "health": 4600.0,
   "reload": 160.0,
   "range": 320.0,
   "recoil": 4.0,
@@ -16,7 +16,6 @@
   "targetAir": true,
   "targetGround": true,
   "shootSound": "shootNavanax",
-
   "consumes": {
     "power": 14.0
   },
@@ -55,7 +54,6 @@
     "trailRotation": true,
     "shootEffect": "hitEmpSpark",
     "smokeEffect": "shootBigSmoke2",
-
     "trailEffect": {
       "type": "WaveEffect",
       "lifetime": 16.0,
@@ -66,7 +64,6 @@
       "colorFrom": "8fdcff",
       "colorTo": "8fdcff"
     },
-
     "hitEffect": {
       "type": "MultiEffect",
       "effects": [
@@ -113,7 +110,6 @@
         }
       ]
     },
-
     "fragBullets": 1,
     "fragRandomSpread": 0.0,
     "fragSpread": 0.0,
@@ -144,7 +140,6 @@
         "colorFrom": "8fdcff",
         "colorTo": "8fdcff"
       },
-
       "bulletInterval": 15.0,
       "intervalBullets": 1,
       "intervalRandomSpread": 0.0,
@@ -180,13 +175,27 @@
       }
     }
   },
-
   "requirements": [
-    { "item": "tin", "amount": 400 },
-    { "item": "cobalt", "amount": 400 },
-    { "item": "chromium", "amount": 300 },
-    { "item": "aluminum", "amount": 300 },
-    { "item": "silicon", "amount": 250 }
+    {
+      "item": "tin",
+      "amount": 400
+    },
+    {
+      "item": "cobalt",
+      "amount": 400
+    },
+    {
+      "item": "chromium",
+      "amount": 300
+    },
+    {
+      "item": "aluminum",
+      "amount": 300
+    },
+    {
+      "item": "silicon",
+      "amount": 250
+    }
   ],
   "category": "turret",
   "research": "impuls"
