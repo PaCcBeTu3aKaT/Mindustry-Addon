@@ -1,0 +1,47 @@
+{
+  "type": "LiquidTurret",
+  "name": "Факел",
+  "description": "Плазменный струйник. Работает на природном газе и выпускает плотную плазменную струю на небольшую дистанцию. Оплавляет цели, разъедая броню. Оружие ближнего боя для выжигания прорывающихся наземных групп.",
+  "size": 2,
+  "health": 1000,
+  "reload": 5,
+  "range": 90,
+  "recoil": 0,
+  "shootY": 4,
+  "shootCone": 50,
+  "inaccuracy": 4,
+  "rotateSpeed": 8,
+  "liquidCapacity": 20,
+  "extinguish": false,
+  "targetAir": false,
+  "targetGround": true,
+  "heatColor": "ff7a45",
+  "shootSound": "shootFlame",
+  "ammoTypes": {
+    "natural-gas": {
+      "type": "BulletType",
+      "speed": 3.8,
+      "lifetime": 24,
+      "damage": 24,
+      "hitSize": 9,
+      "pierce": true,
+      "collidesAir": false,
+      "hittable": false,
+      "ammoMultiplier": 4,
+      "status": "melting",
+      "statusDuration": 240,
+      "buildingDamageMultiplier": 0.6,
+      "shootEffect": "shootPyraFlame",
+      "hitEffect": "hitFlameSmall",
+      "despawnEffect": "none",
+      "hitColor": "ff7a45"
+    }
+  },
+  "requirements": [
+     { "item": "aluminum", "amount": 70 },
+     { "item": "bronze", "amount": 45 },
+     { "item": "tin", "amount": 80 },
+  ],
+  "category": "turret",
+  "research": "aluminum"
+}
