@@ -2,8 +2,6 @@
   "type": "PowerTurret",
   "name": "Разряд",
   "description": "Выпускает тяжёлые энергоболты на среднюю дистанцию. Высокий урон по одиночным наземным целям, но низкая скорострельность. Можно охлаждать водой или криогенной жидкостью.",
-  "research": "iskra",
-  "category": "turret",
   "size": 2,
   "health": 600,
   "reload": 70.0,
@@ -37,4 +35,6 @@
     { "item": "tin", "amount": 60 },
     { "item": "bronze", "amount": 40 }
   ]
+  "category": "turret",
+  "research": "iskra"
 }
