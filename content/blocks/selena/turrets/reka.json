@@ -1,0 +1,83 @@
+{
+  "type": "LiquidTurret",
+  "name": "Река",
+  "description": "Жидкостная турель тушения и контроля. Выпускает тугую дальнобойную струю с высокой скоростью полёта. Тушит пожары на базе и накладывает на врагов эффект заправленной жидкости: мокрость, заморозку, плавление или смолу.",
+  "size": 3,
+  "health": 2250,
+  "reload": 2.0,
+  "range": 360.0,
+  "recoil": 1.0,
+  "shootCone": 25.0,
+  "inaccuracy": 1.0,
+  "velocityRnd": 0.03,
+  "rotateSpeed": 7.0,
+  "liquidCapacity": 60.0,
+  "extinguish": true,
+  "targetAir": true,
+  "targetGround": true,
+  "shootEffect": "shootLiquid",
+
+  "ammoTypes": {
+    "water": {
+      "type": "LiquidBulletType",
+      "liquid": "water",
+      "speed": 7.0,
+      "lifetime": 47.0,
+      "drag": 0.0,
+      "knockback": 2.2,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "damage": 0.3,
+      "ammoMultiplier": 0.5,
+      "statusDuration": 240.0
+    },
+    "cryofluid": {
+      "type": "LiquidBulletType",
+      "liquid": "cryofluid",
+      "speed": 7.0,
+      "lifetime": 47.0,
+      "drag": 0.0,
+      "knockback": 1.6,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "damage": 0.3,
+      "ammoMultiplier": 0.5,
+      "statusDuration": 240.0
+    },
+    "slag": {
+      "type": "LiquidBulletType",
+      "liquid": "slag",
+      "speed": 7.0,
+      "lifetime": 47.0,
+      "drag": 0.0,
+      "knockback": 1.6,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "damage": 6.0,
+      "ammoMultiplier": 0.5,
+      "statusDuration": 240.0
+    },
+    "oil": {
+      "type": "LiquidBulletType",
+      "liquid": "oil",
+      "speed": 7.0,
+      "lifetime": 47.0,
+      "drag": 0.0,
+      "knockback": 1.6,
+      "puddleSize": 8.0,
+      "orbSize": 4.0,
+      "damage": 0.3,
+      "ammoMultiplier": 0.5,
+      "statusDuration": 240.0
+    }
+  },
+
+  "requirements": [
+    { "item": "metaglass", "amount": 100 },
+    { "item": "bronze", "amount": 100 },
+    { "item": "aluminum", "amount": 80 },
+    { "item": "tin", "amount": 150 }
+  ],
+  "category": "turret",
+  "research": "iskra"
+}
