@@ -95,6 +95,6 @@
     { "item": "chromium", "amount": 90 },
     { "item": "silicon", "amount": 150 }
   ],
-  "category": "turret"
+  "category": "turret",
   "research": "korshun"
 }
