@@ -4,7 +4,7 @@
   "description": "Импульсный плазмомет. Выпускает самонаводящийся сгусток плазмы, который взрывается у цели, наэлектризовывает и замедляет её, а затем разлетается на осколки. Базовое сдерживание быстрых и маневренных лёгких групп.",
   "size": 2,
   "health": 800,
-  "reload": 30.0,
+  "reload": 35.0,
   "range": 170.0,
   "recoil": 2.0,
   "shootY": 5.0,
@@ -19,7 +19,10 @@
   "consumes": {
     "power": 3.0
   },
-
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
   "shootType": {
     "type": "FlakBulletType",
     "sprite": "missile-large",
@@ -120,5 +123,5 @@
     { "item": "tin", "amount": 125 }
   ],
   "category": "turret",
-  "research": "trizub"
+  "research": "dvuden"
 }
