@@ -20,7 +20,10 @@
   "consumes": {
     "power": 18.0
   },
-
+  "coolant": {
+    "type": "ConsumeCoolant",
+    "amount": 0.2
+  },
   "shootType": {
     "type": "EmpBulletType",
     "sprite": "circle-bullet",
