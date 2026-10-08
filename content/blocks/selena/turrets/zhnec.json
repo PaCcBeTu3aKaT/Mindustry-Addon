@@ -100,5 +100,6 @@
     { "item": "cobalt", "amount": 160 },
     { "item": "silicon", "amount": 350 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "sarancha"
 }
