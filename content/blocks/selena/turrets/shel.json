@@ -39,7 +39,7 @@
       "type": "BasicBulletType",
       "speed": 7.5,
       "lifetime": 13.5,
-      "damage": 220.0,
+      "damage": 200.0,
       "splashDamage": 50.0,
       "splashDamageRadius": 30.0,
       "width": 9.0,
@@ -61,8 +61,8 @@
         "type": "BasicBulletType",
         "speed": 3.5,
         "lifetime": 16.0,
-        "damage": 14.0,
-        "splashDamage": 8.0,
+        "damage": 30.0,
+        "splashDamage": 15.0,
         "splashDamageRadius": 16.0,
         "width": 5.0,
         "height": 7.0,
@@ -76,11 +76,11 @@
   },
 
   "requirements": [
-    { "item": "chromium", "amount": 100 },
-    { "item": "chromium", "amount": 100 },
-    { "item": "cadmium", "amount": 80 },
-    { "item": "aluminum", "amount": 90 },
-    { "item": "silicon", "amount": 70 }
+    { "item": "tin", "amount": 200 },
+    { "item": "chromium", "amount": 200 },
+    { "item": "cadmium", "amount": 180 },
+    { "item": "aluminum", "amount": 190 },
+    { "item": "silicon", "amount": 170 }
   ],
   "category": "turret",
   "research": "fakel"
