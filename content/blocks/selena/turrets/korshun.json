@@ -1,7 +1,7 @@
 {
   "type": "ItemTurret",
   "name": "Коршун",
-  "description": "Легкий ПТУР. Выпускает среднюю самонаводящуюся ракету с высоким уроном при детонации.",
+  "description": "Легкий ПТРК. Выпускает среднюю самонаводящуюся ракету с высоким уроном при детонации.",
   "size": 2,
   "health": 700,
   "reload": 150
@@ -60,10 +60,11 @@
   },
 
   "requirements": [
+    { "item": "tin", "amount": 120 },
     { "item": "aluminum", "amount": 100 },
     { "item": "bronze", "amount": 60 },
     { "item": "silicon", "amount": 80 }
   ],
   "category": "turret",
-  "research": "dvuden"
+  "research": "strochitel"
 }
