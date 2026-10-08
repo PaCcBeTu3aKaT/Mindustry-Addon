@@ -1,0 +1,118 @@
+{
+  "type": "ItemTurret",
+  "name": "Разлом",
+  "description": "Осколочно-плазменное орудие переменного типа. Работает на водороде. Снаряд взрывается у цели и разлетается на 8 осколков. С хромом осколки летят узким конусом по курсу выстрела и прожигают тяжёлые цели по линии. С кадмием осколки расходятся равномерно на 360° и зачищают рой по площади.",
+  "size": 4,
+  "health": 3400,
+  "reload": 40.0,
+  "range": 200.0,
+  "recoil": 4.0,
+  "shake": 2.0,
+  "shootY": 14.0,
+  "shootCone": 10.0,
+  "inaccuracy": 1.0,
+  "rotateSpeed": 4.0,
+  "liquidCapacity": 40.0,
+  "targetAir": true,
+  "targetGround": true,
+  "shootSound": "shootSalvo",
+
+  "consumes": {
+    "liquid": {
+      "liquid": "hydrogen",
+      "amount": 0.15
+    }
+  },
+
+  "ammoTypes": {
+    "chromium": {
+      "type": "BasicBulletType",
+      "speed": 6.5,
+      "lifetime": 31.0,
+      "damage": 90.0,
+      "splashDamage": 40.0,
+      "splashDamageRadius": 32.0,
+      "width": 12.0,
+      "height": 16.0,
+      "ammoMultiplier": 2,
+      "despawnHit": true,
+      "collidesTeam": false,
+      "hitEffect": "flakExplosion",
+      "despawnEffect": "flakExplosion",
+      "frontColor": "ffffff",
+      "backColor": "7fd4ff",
+      "hitColor": "7fd4ff",
+      "fragBullets": 8,
+      "fragAngle": 0.0,
+      "fragSpread": 0.0,
+      "fragRandomSpread": 20.0,
+      "fragVelocityMin": 0.9,
+      "fragVelocityMax": 1.0,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "speed": 6.0,
+        "lifetime": 22.0,
+        "damage": 55.0,
+        "width": 6.0,
+        "height": 12.0,
+        "pierce": true,
+        "pierceCap": 3,
+        "pierceArmor": true,
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor",
+        "frontColor": "ffffff",
+        "backColor": "7fd4ff",
+        "hitColor": "7fd4ff"
+      }
+    },
+    "cadmium": {
+      "type": "BasicBulletType",
+      "speed": 6.5,
+      "lifetime": 31.0,
+      "damage": 60.0,
+      "splashDamage": 70.0,
+      "splashDamageRadius": 40.0,
+      "width": 12.0,
+      "height": 16.0,
+      "ammoMultiplier": 2,
+      "despawnHit": true,
+      "collidesTeam": false,
+      "hitEffect": "flakExplosion",
+      "despawnEffect": "flakExplosion",
+      "frontColor": "f3e1ff",
+      "backColor": "c77dff",
+      "hitColor": "c77dff",
+      "fragBullets": 8,
+      "fragAngle": 0.0,
+      "fragSpread": 45.0,
+      "fragRandomSpread": 0.0,
+      "fragVelocityMin": 0.7,
+      "fragVelocityMax": 1.0,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "speed": 3.5,
+        "lifetime": 20.0,
+        "damage": 30.0,
+        "splashDamage": 25.0,
+        "splashDamageRadius": 28.0,
+        "width": 7.0,
+        "height": 9.0,
+        "hitEffect": "hitBulletColor",
+        "despawnEffect": "hitBulletColor",
+        "frontColor": "f3e1ff",
+        "backColor": "c77dff",
+        "hitColor": "c77dff"
+      }
+    }
+  },
+
+  "requirements": [
+    { "item": "cobalt", "amount": 400 },
+    { "item": "chromium", "amount": 350 },
+    { "item": "aluminum", "amount": 350 },
+    { "item": "silicon", "amount": 300 },
+    { "item": "cadmium", "amount": 350 }
+  ],
+  "category": "turret",
+  "research": "cobalt"
+}
