@@ -60,7 +60,7 @@
   },
 
   "ammoTypes": {
-    "naturarGas": {
+    "naturalGas": {
       "type": "ContinuousFlameBulletType",
       "damage": 38.0,
       "length": 90.0,
