@@ -1,47 +1,88 @@
 {
-  "type": "LiquidTurret",
+  "type": "ContinuousLiquidTurret",
   "name": "Факел",
-  "description": "Плазменный струйник. Работает на природном газе и выпускает плотную плазменную струю на небольшую дистанцию. Оплавляет цели, разъедая броню. Оружие ближнего боя для выжигания прорывающихся наземных групп.",
+  "description": "Плазменный струйник. Непрерывно выпускает плотную плазменную струю из природного газа на небольшую дистанцию. Оплавляет цели, разъедая броню. Оружие ближнего боя для выжигания прорывающихся наземных групп.",
   "size": 2,
-  "health": 1000,
-  "reload": 5,
-  "range": 90,
-  "recoil": 0,
-  "shootY": 4,
-  "shootCone": 50,
-  "inaccuracy": 4,
-  "rotateSpeed": 8,
-  "liquidCapacity": 20,
-  "extinguish": false,
+  "scaledHealth": 220,
+  "range": 90.0,
+  "shootY": 5.0,
+  "rotateSpeed": 6.0,
   "targetAir": false,
   "targetGround": true,
-  "heatColor": "ff7a45",
-  "shootSound": "shootFlame",
+  "targetUnderBlocks": false,
+  "targetInterval": 5.0,
+  "newTargetInterval": 30.0,
+  "liquidCapacity": 30.0,
+  "liquidConsumed": 0.3,
+  "heatColor": "ff5a2e",
+  "outlineColor": "2d2f39",
+  "shootSound": "none",
+  "loopSound": "shootSublimate",
+  "loopSoundVolume": 1.0,
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-back",
+        "progress": "warmup",
+        "mirror": true,
+        "moveRot": 40.0,
+        "x": 3.5,
+        "y": -0.25,
+        "moveY": 1.0,
+        "under": true,
+        "heatColor": "ff5a2e"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-front",
+        "progress": "warmup",
+        "mirror": true,
+        "moveRot": 40.0,
+        "x": 3.0,
+        "y": 2.5,
+        "moveX": 0.8,
+        "moveY": 0.8,
+        "under": true,
+        "heatColor": "ff5a2e"
+      },
+      {
+        "type": "RegionPart",
+        "suffix": "-nozzle",
+        "progress": "warmup",
+        "mirror": true,
+        "moveX": 1.5,
+        "heatColor": "f03b0e"
+      }
+    ]
+  },
+
   "ammoTypes": {
-    "naturalGas": {
-      "type": "BulletType",
-      "speed": 3.8,
-      "lifetime": 24,
-      "damage": 24,
-      "hitSize": 9,
-      "pierce": true,
-      "collidesAir": false,
-      "hittable": false,
-      "ammoMultiplier": 4,
+    "naturaGas": {
+      "type": "ContinuousFlameBulletType",
+      "damage": 38.0,
+      "length": 90.0,
+      "ammoMultiplier": 1.2,
+      "knockback": 0.5,
+      "pierceCap": 3,
+      "buildingDamageMultiplier": 0.3,
+      "timescaleDamage": true,
       "status": "melting",
-      "statusDuration": 240,
-      "buildingDamageMultiplier": 0.6,
-      "shootEffect": "shootPyraFlame",
-      "hitEffect": "hitFlameSmall",
-      "despawnEffect": "none",
-      "hitColor": "ff7a45"
+      "statusDuration": 240.0,
+      "colors": ["ff7a4555", "ff9c5a99", "ffb26ccc", "ffd9a8", "ffffff"],
+      "flareColor": "ffb26c",
+      "lightColor": "ffb26c",
+      "hitColor": "ffb26c"
     }
   },
+
   "requirements": [
-     { "item": "aluminum", "amount": 70 },
-     { "item": "bronze", "amount": 45 },
-     { "item": "tin", "amount": 80 },
+    { "item": "aluminum", "amount": 70 },
+    { "item": "bronze", "amount": 45 },
+    { "item": "tin", "amount": 80 }
   ],
   "category": "turret",
-  "research": "aluminum"
+  "research": "trizub"
 }
