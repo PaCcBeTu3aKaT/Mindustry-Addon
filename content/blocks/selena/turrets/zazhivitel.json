@@ -5,7 +5,7 @@
   "size": 3,
   "health": 2600,
   "length": 9.0,
-  "repairSpeed": 5.0,
+  "repairSpeed": 4.0,
   "repairRadius": 200.0,
   "beamWidth": 1.4,
   "pulseRadius": 8.0,
@@ -20,6 +20,6 @@
     { "item": "silicon", "amount": 90 },
     { "item": "tin", "amount": 160 }
   ],
-  "category": "turret",
+  "category": "units",
   "research": "iskra"
 }
