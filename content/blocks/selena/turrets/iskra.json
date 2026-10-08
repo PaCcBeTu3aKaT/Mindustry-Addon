@@ -64,5 +64,6 @@
     { "item": "tin", "amount": 30 },
     { "item": "cadmium", "amount": 15 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "duo"
 }
