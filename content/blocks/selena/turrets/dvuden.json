@@ -111,5 +111,6 @@
     { "item": "tin", "amount": 150 },
     { "item": "cadmium", "amount": 40 }
   ],
-  "category": "turret"
+  "category": "turret",
+  "research": "trizub"
 }
