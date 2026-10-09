@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Растворитель щёлочи",
+  "description": "Растворяет песок в воде и выдаёт едкий раствор гидроксида для выщелачивания бокситов. Потребляет энергию.",
+  "size": 2,
+  "health": 300,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftEffect": "formsmoke",
+
+  "outputLiquid": {
+    "liquid": "hydroxideSolution",
+    "amount": 0.2
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "hydroxideSolution", "padding": 2.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "sand", "amount": 3 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.5
+    },
+    "power": 1.0
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 80 },
+    { "item": "bronze", "amount": 60 },
+    { "item": "metaglass", "amount": 50 },
+    { "item": "silicon", "amount": 40 }
+  ],
+  "category": "crafting"
+}
