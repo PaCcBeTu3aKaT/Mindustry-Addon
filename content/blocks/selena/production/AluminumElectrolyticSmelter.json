@@ -1,0 +1,43 @@
+{
+  "type": "GenericCrafter",
+  "name": "Электролизная плавильня алюминия",
+  "description": "Электролизом разлагает глинозём и выдаёт чистый алюминий. Потребляет очень много энергии.",
+  "size": 3,
+  "health": 900,
+  "craftTime": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": false,
+  "craftEffect": "smeltsmoke",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.07,
+
+  "outputItem": {
+    "item": "aluminum",
+    "amount": 5
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      { "type": "DrawFlame", "flameColor": "ffd9a8" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "alumina", "amount": 10 }
+    ],
+    "power": 4.0
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 100 },
+    { "item": "bronze", "amount": 80 },
+    { "item": "cadmium", "amount": 60 },
+    { "item": "metaglass", "amount": 50 },
+    { "item": "silicon", "amount": 50 }
+  ],
+  "category": "crafting"
+}
