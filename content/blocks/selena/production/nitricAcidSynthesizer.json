@@ -1,0 +1,42 @@
+{
+  "type": "GenericCrafter",
+  "name": "Синтезатор азотной кислоты",
+  "description": "Синтезирует азотную кислоту из воды и азота. Потребляет энергию. Обе жидкости нужно подводить отдельными трубами.",
+  "size": 2,
+  "health": 320,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": false,
+  "hasLiquids": true,
+
+  "outputLiquid": {
+    "liquid": "nitricAcid",
+    "amount": 0.5
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "nitric-acid", "padding": 2.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "liquids": [
+      { "liquid": "water", "amount": 0.5 },
+      { "liquid": "nitrogen", "amount": 0.5 }
+    ],
+    "power": 1.2
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 70 },
+    { "item": "bronze", "amount": 55 },
+    { "item": "metaglass", "amount": 50 },
+    { "item": "silicon", "amount": 40 }
+  ],
+  "category": "crafting"
+}
