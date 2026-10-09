@@ -4,5 +4,6 @@
   "color": "f08a4b",
   "viscosity": 0.5,
   "temperature": 0.5,
+  "effect": "corroded",
   "coolant": false
 }
