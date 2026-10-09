@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Натриевый редуктор",
+  "description": "Восстанавливает кремний жидким натрием в атмосфере хлора. Выдаёт кремний и песок. Крайне опасен: жидкий натрий горюч и взрывоопасен.",
+  "size": 4,
+  "health": 1600,
+  "craftTime": 60.0,
+  "liquidCapacity": 80.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftEffect": "formsmoke",
+
+  "outputItems": [
+    { "item": "silicon", "amount": 8 },
+  ],
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "liquidSodium", "padding": 4.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "liquids": [
+      { "liquid": "liquidSodium", "amount": 0.15 },
+      { "liquid": "chlorine", "amount": 0.2 }
+    ],
+    "items": [
+      { "item": "sand", "amount": 3 }
+    ],
+    "power": 5.0
+  },
+
+  "requirements": [
+    { "item": "cadmium", "amount": 60 },
+    { "item": "chromium", "amount": 80 },
+    { "item": "cobalt", "amount": 80 },
+    { "item": "aluminum", "amount": 50 },
+    { "item": "metaglass", "amount": 80 }
+  ],
+  "category": "crafting"
+}
