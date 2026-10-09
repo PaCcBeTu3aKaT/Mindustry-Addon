@@ -20,7 +20,7 @@
     "type": "DrawMulti",
     "drawers": [
       { "type": "DrawRegion", "suffix": "-bottom" },
-      { "type": "DrawLiquidTile", "drawLiquid": "sulfuric-acid", "padding": 2.0 },
+      { "type": "DrawLiquidTile", "drawLiquid": "sulfuricAcid", "padding": 2.0 },
       { "type": "DrawDefault" }
     ]
   },
