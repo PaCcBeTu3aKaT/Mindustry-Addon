@@ -13,7 +13,7 @@
   "dumpExtraLiquid": true,
   "ambientSound": "loopElectricHum",
   "ambientSoundVolume": 0.08,
-
+  "liquidOutputDirections": [1, 3],
   "outputLiquids": [
     { "liquid": "hydrogen", "amount": 0.5 },
     { "liquid": "nitrogen", "amount": 0.5 }
