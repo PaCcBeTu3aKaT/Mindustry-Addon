@@ -34,7 +34,7 @@
   },
 
   "requirements": [
-    { "item": "bronze", "amount": 70 },
+    { "item": "bronze", "amount": 30 },
     { "item": "cadmium", "amount": 40 },
     { "item": "tin", "amount": 40 }
   ],
