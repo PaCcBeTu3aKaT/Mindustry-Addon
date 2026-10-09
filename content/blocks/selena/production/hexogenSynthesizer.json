@@ -1,0 +1,53 @@
+{
+  "type": "GenericCrafter",
+  "name": "Синтезатор гексогена",
+  "description": "Нитрует уголь смесью серной и азотной кислот и выдаёт гексоген. Побочно выделяет немного воды. Потребляет энергию.",
+  "size": 3,
+  "health": 700,
+  "craftTime": 100.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "ignoreLiquidFullness": true,
+  "dumpExtraLiquid": true,
+  "craftEffect": "formsmoke",
+
+  "outputItem": {
+    "item": "hexogen",
+    "amount": 1
+  },
+
+  "outputLiquid": {
+    "liquid": "water",
+    "amount": 0.05
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "nitricAcid", "padding": 3.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "coal", "amount": 2 }
+    ],
+    "liquids": [
+      { "liquid": "sulfuricAcid", "amount": 0.25 },
+      { "liquid": "nitricAcid", "amount": 0.25 }
+    ],
+    "power": 2.0
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 90 },
+    { "item": "bronze", "amount": 40 },
+    { "item": "metaglass", "amount": 70 },
+    { "item": "silicon", "amount": 60 }
+  ],
+  "category": "crafting"
+}
