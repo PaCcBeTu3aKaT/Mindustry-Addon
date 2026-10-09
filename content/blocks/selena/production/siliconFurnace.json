@@ -1,0 +1,42 @@
+{
+  "type": "GenericCrafter",
+  "name": "Кремниевая печь",
+  "description": "Выплавляет кремний из угля и песка. Крупная печь для массового производства. Потребляет энергию.",
+  "size": 3,
+  "health": 800,
+  "craftTime": 80.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": false,
+  "craftEffect": "smeltsmoke",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.07,
+
+  "outputItem": {
+    "item": "silicon",
+    "amount": 2
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      { "type": "DrawFlame", "flameColor": "ffef99" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "coal", "amount": 4 },
+      { "item": "sand", "amount": 5 }
+    ],
+    "power": 1.0
+  },
+
+  "requirements": [
+    { "item": "bronze", "amount": 70 },
+    { "item": "cadmium", "amount": 40 },
+    { "item": "tin", "amount": 40 }
+  ],
+  "category": "crafting"
+}
