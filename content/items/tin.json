@@ -2,4 +2,7 @@
   "name": "Олово",
   "color": "b3b36b",
   "hardness": 2
+  "research": {
+"parent": "copper"
+}
 }
