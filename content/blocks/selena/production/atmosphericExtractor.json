@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Атмосферный экстрактор",
+  "description": "Разделяет воду и забирает газы из атмосферы. Потребляет энергию и воду, выдаёт водород и азот.",
+  "size": 3,
+  "health": 700,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": false,
+  "hasLiquids": true,
+  "ignoreLiquidFullness": true,
+  "dumpExtraLiquid": true,
+  "ambientSound": "loopElectricHum",
+  "ambientSoundVolume": 0.08,
+
+  "outputLiquids": [
+    { "liquid": "hydrogen", "amount": 0.5 },
+    { "liquid": "nitrogen", "amount": 0.5 }
+  ],
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "nitrogen", "padding": 4.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 1.0
+    },
+    "power": 2.5
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 100 },
+    { "item": "metaglass", "amount": 60 },
+    { "item": "silicon", "amount": 70 },
+    { "item": "bronze", "amount": 50 }
+  ],
+  "category": "crafting"
+}
