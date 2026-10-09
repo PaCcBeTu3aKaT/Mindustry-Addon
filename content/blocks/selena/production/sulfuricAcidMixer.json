@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Мешалка серной кислоты",
+  "description": "Смешивает серу с водой и выдаёт серную кислоту. Потребляет энергию.",
+  "size": 2,
+  "health": 320,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftEffect": "formsmoke",
+
+  "outputLiquid": {
+    "liquid": "sulfuric-acid",
+    "amount": 0.5
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "sulfuric-acid", "padding": 2.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "sulfur", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.5
+    },
+    "power": 1.0
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 60 },
+    { "item": "bronze", "amount": 50 },
+    { "item": "metaglass", "amount": 40 },
+    { "item": "silicon", "amount": 30 }
+  ],
+  "category": "crafting"
+}
