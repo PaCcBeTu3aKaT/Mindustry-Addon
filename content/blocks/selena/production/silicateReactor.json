@@ -1,0 +1,47 @@
+{
+  "type": "GenericCrafter",
+  "name": "Силикатный реактор",
+  "description": "Растворяет песок в растворе гидроксида и осаждает из него кремний серной кислотой. Не требует угля и алюминия. Потребляет энергию.",
+  "size": 3,
+  "health": 900,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftEffect": "formsmoke",
+
+  "outputItem": {
+    "item": "silicon",
+    "amount": 6
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "hydroxideSolution", "padding": 3.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "sand", "amount": 4 }
+    ],
+    "liquids": [
+      { "liquid": "hydroxideSolution", "amount": 0.15 },
+      { "liquid": "sulfuricAcid", "amount": 0.15 }
+    ],
+    "power": 2.0
+  },
+
+  "requirements": [
+    { "item": "cadmium", "amount": 80 },
+    { "item": "bronze", "amount": 80 },
+    { "item": "aluminum", "amount": 60 },
+    { "item": "metaglass", "amount": 60 },
+    { "item": "chromium", "amount": 30 }
+  ],
+  "category": "crafting"
+}
