@@ -12,7 +12,7 @@
   "craftEffect": "formsmoke",
 
   "outputLiquid": {
-    "liquid": "sulfuric-acid",
+    "liquid": "sulfuricAcid",
     "amount": 0.5
   },
 
