@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Автоклав",
+  "description": "Выщелачивает боксит раствором гидроксида под давлением и выдаёт глинозём. Потребляет энергию.",
+  "size": 3,
+  "health": 700,
+  "craftTime": 80.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": true,
+  "hasLiquids": true,
+  "craftEffect": "formsmoke",
+
+  "outputItem": {
+    "item": "alumina",
+    "amount": 10
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "hydroxideSolution", "padding": 3.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "bauxite", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "hydroxideSolution",
+      "amount": 0.2
+    },
+    "power": 1.5
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 80 },
+    { "item": "bronze", "amount": 40 },
+    { "item": "metaglass", "amount": 40 },
+    { "item": "silicon", "amount": 30 }
+  ],
+  "category": "crafting"
+}
