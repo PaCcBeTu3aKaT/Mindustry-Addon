@@ -38,4 +38,5 @@
     { "item": "bronze", "amount": 20 }
   ],
   "category": "crafting"
+  "research": "bronzeSmelter"
 }
