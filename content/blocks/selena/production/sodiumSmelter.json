@@ -1,0 +1,47 @@
+{
+  "type": "GenericCrafter",
+  "name": "Плавильня натрия",
+  "description": "Плавит металлический натрий, сжигая уголь, и выдаёт жидкий натрий. Жидкий натрий горюч и взрывоопасен.",
+  "size": 2,
+  "health": 400,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "itemCapacity": 10,
+  "hasItems": true,
+  "hasLiquids": true,
+  "hasPower": false,
+  "craftEffect": "smeltsmoke",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.07,
+
+  "outputLiquid": {
+    "liquid": "liquidSodium",
+    "amount": 0.3
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "liquidSodium", "padding": 2.0 },
+      { "type": "DrawDefault" },
+      { "type": "DrawFlame", "flameColor": "ff9c5a" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "sodium", "amount": 1 },
+      { "item": "coal", "amount": 1 }
+    ]
+    "power": 1.0
+  },
+
+  "requirements": [
+    { "item": "cobalt", "amount": 60 },
+    { "item": "chromium", "amount": 50 },
+    { "item": "metaglass", "amount": 40 },
+    { "item": "silicon", "amount": 30 }
+  ],
+  "category": "crafting"
+}
