@@ -41,5 +41,6 @@
     { "item": "chromium", "amount": 60 },
     { "item": "cobalt", "amount": 70 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "aluminumElectrolyticSmelter"
 }
