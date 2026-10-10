@@ -1,0 +1,46 @@
+{
+  "type": "Drill",
+  "name": "Сверхглубокая буровая установка",
+  "description": "Промышленный буровой комплекс максимального тира, способный пробивать любые породы на критических глубинах. Предназначен для финальной добычи самых редких и твёрдых ресурсов с применением кобальта.",
+  "size": 5,
+  "health": 2400,
+  "tier": 6,
+  "drillTime": 180.0,
+  "itemCapacity": 30,
+  "rotateSpeed": 5.0,
+  "warmupSpeed": 0.008,
+  "drawRim": true,
+  "updateEffect": "pulverizeRed",
+  "updateEffectChance": 0.04,
+  "drillEffect": "mineHuge",
+  "liquidBoostIntensity": 2.0,
+  "consumes": {
+    "power": 6.0,
+    "liquid": {
+      "liquid": "cryofluid",
+      "amount": 0.12,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "cobalt",
+      "amount": 150
+    },
+    {
+      "item": "ferroAlloy",
+      "amount": 60
+    },
+    {
+      "item": "chromium",
+      "amount": 100
+    },
+    {
+      "item": "aluminum",
+      "amount": 120
+    }
+  ],
+  "category": "production",
+  "research": "rotaryPercussionRig"
+}
