@@ -1,0 +1,13 @@
+
+{
+  "type": "OverflowGate",
+  "name": "Приводной избыточный затвор",
+  "description": "Пропускает предметы вперёд, а когда впереди занято, направляет их в стороны.",
+  "buildCostMultiplier": 3.0,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "driveRouter"
+}
