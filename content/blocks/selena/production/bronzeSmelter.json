@@ -37,4 +37,5 @@
     { "item": "cadmium", "amount": 25 }
   ],
   "category": "crafting"
+  "research": "outpost"
 }
