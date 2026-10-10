@@ -4,14 +4,22 @@
   "description": "Базовый бур первого тира, работающий на энергии сжатого воздуха.",
   "size": 2,
   "health": 260,
-  "tier": 3,
-  "drillTime": 400,
+  "tier": 2,
+  "drillTime": 450,
   "itemCapacity": 10,
   "rotateSpeed": 2.5,
   "warmupSpeed": 0.015,
   "updateEffect": "pulverizeSmall",
   "updateEffectChance": 0.02,
   "drillEffect": "mine",
+  "consumes": {
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1,
+      "optional": true,
+      "booster": true
+    },
+  },
   "requirements": [
     { "item": "tin", "amount": 30 },
     { "item": "cadmium", "amount": 25 }
