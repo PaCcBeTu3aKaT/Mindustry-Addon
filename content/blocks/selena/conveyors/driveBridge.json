@@ -14,5 +14,5 @@
     { "item": "cadmium", "amount": 2 }
   ],
   "category": "distribution",
-  "research": "drive-conveyor"
+  "research": "driveRouter"
 }
