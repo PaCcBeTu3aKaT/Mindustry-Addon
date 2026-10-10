@@ -1,0 +1,43 @@
+{
+  "type": "GenericCrafter",
+  "name": "Синтезатор криогенной жидкости",
+  "description": "Охлаждает воду жидким азотом и выдаёт криогенную жидкость. Потребляет энергию.",
+  "size": 2,
+  "health": 320,
+  "craftTime": 60.0,
+  "liquidCapacity": 60.0,
+  "hasPower": true,
+  "hasItems": false,
+  "hasLiquids": true,
+
+  "outputLiquid": {
+    "liquid": "cryofluid",
+    "amount": 0.5
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "cryofluid", "padding": 2.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "liquids": [
+      { "liquid": "water", "amount": 0.2 },
+      { "liquid": "nitrogen", "amount": 0.1 }
+    ],
+    "power": 1.5
+  },
+
+  "requirements": [
+    { "item": "tin", "amount": 70 },
+    { "item": "aluminum", "amount": 60 },
+    { "item": "metaglass", "amount": 50 },
+    { "item": "silicon", "amount": 40 },
+    { "item": "chromium", "amount": 40 }
+  ],
+  "category": "crafting"
+}
