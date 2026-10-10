@@ -1,0 +1,13 @@
+{
+  "type": "OverflowGate",
+  "name": "Приводной избыточный шлюз",
+  "description": "Инвертированный затвор: направляет предметы в стороны, а когда стороны заняты, пропускает вперёд.",
+  "invert": true,
+  "buildCostMultiplier": 3.0,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "driveOverflowGate"
+}
