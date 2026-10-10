@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "Радиоизотопный облучатель",
+  "description": "Облучает кобальт нейтронами и превращает его в радиоактивный кобальт-60. Охлаждается водой.",
+  "size": 3,
+  "health": 1200,
+  "craftTime": 50.0,
+  "liquidCapacity": 30.0,
+  "itemCapacity": 10,
+  "hasItems": true,
+  "hasLiquids": true,
+  "hasPower": false,
+
+  "outputItem": {
+    "item": "cobalt-60",
+    "amount": 1
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawRegion", "suffix": "-bottom" },
+      { "type": "DrawLiquidTile", "drawLiquid": "water", "padding": 4.0 },
+      { "type": "DrawDefault" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "cobalt", "amount": 2 }
+    ],
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.2
+    }
+  },
+
+  "requirements": [
+    { "item": "cobalt", "amount": 60 },
+    { "item": "chromium", "amount": 70 },
+    { "item": "aluminum", "amount": 90 },
+    { "item": "silicon", "amount": 70 },
+    { "item": "tin", "amount": 60 }
+  ],
+  "category": "crafting"
+}
