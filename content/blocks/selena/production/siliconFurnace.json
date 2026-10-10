@@ -39,4 +39,5 @@
     { "item": "tin", "amount": 40 }
   ],
   "category": "crafting"
+  "research": "bronzeSmelter"
 }
