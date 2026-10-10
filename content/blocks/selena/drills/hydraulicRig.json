@@ -16,7 +16,7 @@
   "drillEffect": "mineHuge",
   "liquidBoostIntensity": 2.0,
   "consumes": {
-    "power": 12.0,
+    "power": 5.0,
     "liquids": [
       {
         "liquid": "water",
