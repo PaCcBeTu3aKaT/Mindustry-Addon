@@ -42,5 +42,6 @@
     { "item": "aluminum", "amount": 50 },
     { "item": "metaglass", "amount": 80 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "silicateReactor"
 }
