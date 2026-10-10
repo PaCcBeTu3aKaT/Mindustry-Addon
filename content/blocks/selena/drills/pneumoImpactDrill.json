@@ -1,0 +1,21 @@
+{
+  "type": "Drill",
+  "name": "Пневмоударный бур",
+  "description": "Базовый бур первого тира, работающий на энергии сжатого воздуха. Не требует электричества. Предназначен для добычи базовых ресурсов на начальном этапе игры.",
+  "size": 2,
+  "health": 260,
+  "tier": 3,
+  "drillTime": 400,
+  "itemCapacity": 10,
+  "rotateSpeed": 2.5,
+  "warmupSpeed": 0.015,
+  "updateEffect": "pulverizeSmall",
+  "updateEffectChance": 0.02,
+  "drillEffect": "mine",
+  "requirements": [
+    { "item": "tin", "amount": 30 },
+    { "item": "cadmium", "amount": 25 }
+  ],
+  "category": "production",
+  "research": "outpost"
+}
