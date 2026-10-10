@@ -24,22 +24,10 @@
     }
   },
   "requirements": [
-    {
-      "item": "chromium",
-      "amount": 80
-    },
-    {
-      "item": "aluminum",
-      "amount": 80
-    },
-    {
-      "item": "tin",
-      "amount": 80
-    },
-    {
-      "item": "bronze",
-      "amount": 50
-    }
+    { "item": "chromium", "amount": 80 },
+    { "item": "aluminum", "amount": 80 },
+    { "item": "tin", "amount": 80 },
+    { "item": "bronze", "amount": 50 }
   ],
   "category": "production",
   "research": "hydraulicDrill"
