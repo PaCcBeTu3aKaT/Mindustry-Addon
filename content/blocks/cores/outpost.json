@@ -1,4 +1,3 @@
-{
   "type": "CoreBlock",
   "name": "Форпост",
   "description": "Начальное звено технологической экспансии. Компактное, но надежное.",
@@ -8,12 +7,22 @@
   "unitType": "initiator",
   "unitCapModifier": 8,
   "category": "effect",
+  "isFirstTier": true,
+  "alwaysUnlocked": true,
   "requirements": [
-    { "item": "tin", "amount": 1000 },
-    { "item": "cadmium", "amount": 800 }
+    {
+      "item": "tin",
+      "amount": 1000
+    },
+    {
+      "item": "cadmium",
+      "amount": 800
+    }
   ],
   "research": {
+    "planet": "selena",
     "root": true,
-    "name": "Технологическая ветвь"
+    "name": "Селена",
+    "requiresUnlock": false
   }
 }
