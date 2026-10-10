@@ -42,5 +42,6 @@
     { "item": "silicon", "amount": 70 },
     { "item": "bronze", "amount": 50 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "bronzeSmelter"
 }
