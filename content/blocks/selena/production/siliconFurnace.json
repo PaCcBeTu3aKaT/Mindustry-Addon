@@ -38,6 +38,6 @@
     { "item": "cadmium", "amount": 40 },
     { "item": "tin", "amount": 40 }
   ],
-  "category": "crafting"
+  "category": "crafting",
   "research": "bronzeSmelter"
 }
