@@ -1,0 +1,16 @@
+{
+  "type": "Junction",
+  "name": "Приводной перекрёсток",
+  "description": "Пропускает потоки предметов крест-накрест без смешивания. Рассчитан на скорость приводного конвейера.",
+  "speed": 20,
+  "capacity": 8,
+  "health": 60,
+  "buildCostMultiplier": 3,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  ],
+  "category": "distribution",
+  "research": "driveRouter"
+}
