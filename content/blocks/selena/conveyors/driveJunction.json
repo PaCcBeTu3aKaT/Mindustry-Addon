@@ -10,7 +10,6 @@
     { "item": "tin", "amount": 2 },
     { "item": "cadmium", "amount": 2 }
   ],
-  ],
   "category": "distribution",
   "research": "driveRouter"
 }
