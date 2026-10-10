@@ -1,5 +1,4 @@
 // Селена — спутник земного типа планеты Серпуло
-// Положить в content/planets/selena.hjson
 
 alwaysUnlocked: true
 accessible: true
