@@ -1,0 +1,14 @@
+{
+  "type": "Conveyor",
+  "name": "Приводной конвейер",
+  "description": "Быстрый конвейер для перевозки предметов.",
+  "health": 80,
+  "speed": 0.12,
+  "displayedSpeed": 15,
+  "requirements": [
+    { "item": "tin", "amount": 1 },
+    { "item": "cadmium", "amount": 1 }
+  ],
+  "category": "distribution",
+  "research": "outpost"
+}
