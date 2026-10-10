@@ -1,7 +1,7 @@
 {
   "type": "GenericCrafter",
   "name": "Синтезатор гексогена",
-  "description": "Нитрует уголь смесью серной и азотной кислот и выдаёт гексоген. Побочно выделяет немного воды. Потребляет энергию.",
+  "description": "Нитрует уголь смесью серной и азотной кислот и выдаёт гексоген. Потребляет энергию.",
   "size": 3,
   "health": 700,
   "craftTime": 100.0,
@@ -16,11 +16,6 @@
   "outputItem": {
     "item": "hexogen",
     "amount": 1
-  },
-
-  "outputLiquid": {
-    "liquid": "water",
-    "amount": 0.05
   },
 
   "drawer": {
@@ -49,5 +44,6 @@
     { "item": "metaglass", "amount": 70 },
     { "item": "silicon", "amount": 60 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "nitricAcidSynthesizer"
 }
