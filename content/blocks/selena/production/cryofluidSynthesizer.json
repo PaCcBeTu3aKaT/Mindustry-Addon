@@ -32,7 +32,7 @@
       { "liquid": "water", "amount": 0.5 },
       { "liquid": "nitrogen", "amount": 0.1 }
     ],
-    "power": 1.5
+    "power": 1.0
   },
 
   "requirements": [
@@ -41,5 +41,6 @@
     { "item": "metaglass", "amount": 50 },
     { "item": "silicon", "amount": 40 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "nitricAcidSynthesizer"
 }
