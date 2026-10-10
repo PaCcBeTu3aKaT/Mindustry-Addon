@@ -1,0 +1,46 @@
+{
+  "type": "Drill",
+  "name": "Ударо-вращательная буровая установка",
+  "description": "Тяжёлая буровая установка, комбинирующая вращательное бурение с частыми осевыми ударами. Предназначена для высокоскоростной добычи прочных и глубоко залегающих пород с использованием хромовых компонентов.",
+  "size": 4,
+  "health": 1400,
+  "tier": 5,
+  "drillTime": 220.0,
+  "itemCapacity": 20,
+  "rotateSpeed": 6.0,
+  "warmupSpeed": 0.01,
+  "drawRim": true,
+  "updateEffect": "pulverizeRed",
+  "updateEffectChance": 0.03,
+  "drillEffect": "mineHuge",
+  "liquidBoostIntensity": 1.8,
+  "consumes": {
+    "power": 3.5,
+    "liquid": {
+      "liquid": "water",
+      "amount": 0.1,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "requirements": [
+    {
+      "item": "chromium",
+      "amount": 80
+    },
+    {
+      "item": "aluminum",
+      "amount": 80
+    },
+    {
+      "item": "tin",
+      "amount": 80
+    },
+    {
+      "item": "bronze",
+      "amount": 50
+    }
+  ],
+  "category": "production",
+  "research": "hydraulicDrill"
+}
