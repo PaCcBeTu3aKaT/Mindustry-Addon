@@ -43,5 +43,6 @@
     { "item": "metaglass", "amount": 60 },
     { "item": "chromium", "amount": 30 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "aluminothermicFurnace"
 }
