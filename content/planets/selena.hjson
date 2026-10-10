@@ -112,23 +112,6 @@ updateLighting: false
 generator: {
   type: SerpuloPlanetGenerator
 }
-// Запасной вариант, если игра не примет SerpuloPlanetGenerator
-// (формат как у asthosus, генератор астероидных секторов):
-// generator: {
-//   octaves: 3
-//   persistence: 0.52
-//   scale: 22
-//   mag: 0.721
-//   thresh: 1.152
-//   min: 100
-//   max: 100
-//   radMin: 220
-//   radMax: 600
-//   iceChance: 0.2
-//   carbonChance: 0.3
-//   berylChance: 0
-//   ferricChance: 0.2
-// }
 
 // --- Правила кампании (по образцу Серпуло) ---
 allowCampaignRules: true
@@ -154,4 +137,4 @@ campaignRuleDefaults: {
   hideSpawns: true
 }
 
-defaultCore: core-shard
+defaultCore: outpost
