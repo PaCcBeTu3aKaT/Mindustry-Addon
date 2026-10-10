@@ -43,5 +43,5 @@
     { "item": "bronze", "amount": 50 }
   ],
   "category": "crafting",
-  "research": "bronzeSmelter"
+  "research": "metaglassSmelter"
 }
