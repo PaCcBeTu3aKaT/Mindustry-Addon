@@ -1,0 +1,18 @@
+{
+  "type": "BufferedItemBridge",
+  "name": "Приводной мостовой конвейер",
+  "description": "Переносит предметы через блоки на расстояние до 5 клеток. Рассчитан на скорость приводного конвейера.",
+  "fadeIn": false,
+  "moveArrows": false,
+  "range": 5,
+  "speed": 54,
+  "arrowSpacing": 6,
+  "bufferCapacity": 14,
+  "crushFragile": true,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "drive-conveyor"
+}
