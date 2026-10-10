@@ -25,8 +25,11 @@
   },
 
   "consumes": {
+    "items": [
+      { "item": "cadmium", "amount": 1 }
+    ],
     "liquids": [
-      { "liquid": "water", "amount": 0.2 },
+      { "liquid": "water", "amount": 0.3 },
       { "liquid": "nitrogen", "amount": 0.1 }
     ],
     "power": 1.5
