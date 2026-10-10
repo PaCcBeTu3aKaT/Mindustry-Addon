@@ -38,6 +38,6 @@
     { "item": "metaglass", "amount": 50 },
     { "item": "silicon", "amount": 40 }
   ],
-  "category": "crafting"
+  "category": "crafting",
   "research": "sulfuricAcidMixer"
 }
