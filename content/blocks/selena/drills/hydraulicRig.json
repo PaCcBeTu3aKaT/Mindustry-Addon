@@ -1,0 +1,36 @@
+{
+  "type": "Drill",
+  "name": "Гидравлическая буровая установка",
+  "description": "Ситуативный гигант размером 6×6. Требует огромного количества воды, но по скорости добычи превосходит все остальные буры.",
+  "size": 6,
+  "health": 3600,
+  "tier": 10,
+  "drillTime": 100.0,
+  "itemCapacity": 50,
+  "liquidCapacity": 400.0,
+  "rotateSpeed": 6.0,
+  "warmupSpeed": 0.006,
+  "drawRim": true,
+  "updateEffect": "pulverizeRed",
+  "updateEffectChance": 0.05,
+  "drillEffect": "mineHuge",
+  "liquidBoostIntensity": 2.0,
+  "consumes": {
+    "power": 12.0,
+    "liquids": [
+      {
+        "liquid": "water",
+        "amount": 2.5
+      }
+    ]
+  },
+  "requirements": [
+    { "item": "cobalt", "amount": 300 },
+    { "item": "ferroAlloy", "amount": 120 },
+    { "item": "chromium", "amount": 200 },
+    { "item": "aluminum", "amount": 250 },
+    { "item": "metaglass", "amount": 150 }
+  ],
+  "category": "production",
+  "research": "ultradeepUig"
+}
