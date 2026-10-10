@@ -1,0 +1,13 @@
+{
+  "type": "Router",
+  "name": "Приводной маршрутизатор",
+  "description": "Равномерно раздаёт предметы по соседним блокам. Рассчитан на скорость приводного конвейера.",
+  "speed": 4.0,
+  "buildCostMultiplier": 4.0,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "driveConveyor"
+}
