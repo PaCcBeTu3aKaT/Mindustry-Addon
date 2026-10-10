@@ -1,0 +1,15 @@
+{
+  "type": "StackConveyor",
+  "name": "Кассетный конвейер",
+  "description": "Пакетный конвейер: грузит предметы пачками и перевозит их с пропускной способностью около 50 предметов в секунду. Загружается и выгружается только на концах линии.",
+  "health": 110,
+  "speed": 0.0833,
+  "itemCapacity": 10,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "chromium", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "driveRouter"
+}
