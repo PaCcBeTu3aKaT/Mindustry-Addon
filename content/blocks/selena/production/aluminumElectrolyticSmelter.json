@@ -39,5 +39,6 @@
     { "item": "metaglass", "amount": 50 },
     { "item": "silicon", "amount": 50 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "autoclave"
 }
