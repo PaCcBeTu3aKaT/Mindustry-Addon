@@ -1,0 +1,12 @@
+{
+  "type": "Sorter",
+  "name": "Приводной сортировщик",
+  "description": "Пропускает вперёд выбранный предмет, остальные отправляет в стороны.",
+  "buildCostMultiplier": 3.0,
+  "requirements": [
+    { "item": "tin", "amount": 2 },
+    { "item": "cadmium", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "drive-conveyor"
+}
