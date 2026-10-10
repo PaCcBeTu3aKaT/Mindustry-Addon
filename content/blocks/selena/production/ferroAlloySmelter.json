@@ -1,0 +1,45 @@
+{
+  "type": "GenericCrafter",
+  "name": "Плавильня ферро-сплава",
+  "description": "Сплавляет кобальт, алюминий, хром и олово в ферро-сплав. Потребляет много энергии.",
+  "size": 3,
+  "health": 1800,
+  "craftTime": 70.0,
+  "itemCapacity": 20,
+  "hasPower": true,
+  "hasLiquids": false,
+  "craftEffect": "smeltsmoke",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.07,
+
+  "outputItem": {
+    "item": "ferroAlloy",
+    "amount": 1
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      { "type": "DrawDefault" },
+      { "type": "DrawFlame" }
+    ]
+  },
+
+  "consumes": {
+    "items": [
+      { "item": "cobalt", "amount": 3 },
+      { "item": "aluminum", "amount": 2 },
+      { "item": "chromium", "amount": 2 },
+      { "item": "tin", "amount": 1 }
+    ],
+    "power": 5.0
+  },
+
+  "requirements": [
+    { "item": "silicon", "amount": 80 },
+    { "item": "aluminum", "amount": 90 },
+    { "item": "chromium", "amount": 60 },
+    { "item": "cobalt", "amount": 70 }
+  ],
+  "category": "crafting"
+}
