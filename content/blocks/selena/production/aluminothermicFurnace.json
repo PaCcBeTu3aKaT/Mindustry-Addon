@@ -39,5 +39,6 @@
     { "item": "cadmium", "amount": 60 },
     { "item": "metaglass", "amount": 30 }
   ],
-  "category": "crafting"
+  "category": "crafting",
+  "research": "siliconFurnace"
 }
