@@ -1,0 +1,22 @@
+
+{
+  "type": "ItemBridge",
+  "name": "Электроимпульсный конвейер",
+  "description": "Фазовый мостовой конвейер дальнего действия. Передаёт предметы электрическими импульсами.",
+  "range": 14,
+  "transportTime": 1.2,
+  "arrowPeriod": 0.9,
+  "arrowTimeScl": 2.75,
+  "hasPower": true,
+  "pulse": true,
+  "consumes": {
+    "power": 0.3
+  },
+  "requirements": [
+    { "item": "cobalt", "amount": 2 },
+    { "item": "chromium", "amount": 2 },
+    { "item": "ferroAlloy", "amount": 2 }
+  ],
+  "category": "distribution",
+  "research": "driveBridge"
+}
