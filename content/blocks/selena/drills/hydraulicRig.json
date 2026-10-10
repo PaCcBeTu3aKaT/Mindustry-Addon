@@ -5,7 +5,7 @@
   "size": 6,
   "health": 3600,
   "tier": 20,
-  "drillTime": 50.0,
+  "drillTime": 70.0,
   "itemCapacity": 50,
   "liquidCapacity": 450.0,
   "rotateSpeed": 6.0,
@@ -20,7 +20,7 @@
     "liquids": [
       {
         "liquid": "water",
-        "amount": 4.0
+        "amount": 3.0
       }
     ]
   },
