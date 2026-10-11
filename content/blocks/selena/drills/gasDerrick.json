@@ -1,0 +1,26 @@
+{
+  "type": "SolidPump",
+  "name": "Газовая вышка",
+  "description": "Добывает природный газ из недр. Потребляет немного энергии. Газ горюч и взрывоопасен.",
+  "size": 3,
+  "health": 800,
+  "result": "naturalGas",
+  "pumpAmount": 1.2,
+  "liquidCapacity": 240.0,
+  "rotateSpeed": 1.4,
+  "updateEffect": "pulverize",
+  "updateEffectChance": 0.05,
+
+  "consumes": {
+    "power": 0.5
+  },
+
+  "requirements": [
+    { "item": "bronze", "amount": 80 },
+    { "item": "aluminum", "amount": 80 },
+    { "item": "metaglass", "amount": 60 },
+    { "item": "silicon", "amount": 40 }
+  ],
+  "category": "production",
+  "research": "pneumoImpactDrill"
+}
