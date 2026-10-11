@@ -1,10 +1,12 @@
 {
-  "type": "ConsumeGenerator",
+  "type": "ThermalGenerator",
   "name": "Гидрогенератор",
   "description": "Устанавливается строго на воду. Выработка 100% на мелководье и 120% на глубоководье.",
   "size": 3,
   "health": 900,
   "powerProduction": 6.0,
+  "attribute": "light",
+  "minEfficiency": 0.01,
   "requiresWater": true,
   "floating": true,
   "generateEffect": "generatespark",
