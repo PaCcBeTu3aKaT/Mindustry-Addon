@@ -1,0 +1,35 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Газовый инверторный генератор",
+  "description": "Версия инверторного генератора на природном газе.",
+  "size": 2,
+  "health": 260,
+  "powerProduction": 5.0,
+  "hasLiquids": true,
+  "liquidCapacity": 30.0,
+  "generateEffect": "generatespark",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.04,
+  "consumes": {
+    "liquid": {
+      "liquid": "naturalGas",
+      "amount": 0.08
+    }
+  },
+  "requirements": [
+    {
+      "item": "bronze",
+      "amount": 45
+    },
+    {
+      "item": "cadmium",
+      "amount": 45
+    },
+    {
+      "item": "tin",
+      "amount": 55
+    }
+  ],
+  "category": "power",
+  "research": "inverterGenerator"
+}
