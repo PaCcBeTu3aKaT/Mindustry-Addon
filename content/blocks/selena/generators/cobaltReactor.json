@@ -1,0 +1,41 @@
+{
+  "type": "NuclearReactor",
+  "name": "Кобальтовый реактор",
+  "description": "Высокоуровневая ядерная энергетика на кобальте-60. Вырабатывает огромное количество энергии, но требует мощного охлаждения жидким натрием. При перегреве взрывается.",
+  "size": 4,
+  "health": 2400,
+  "itemDuration": 300.0,
+  "itemCapacity": 30,
+  "liquidCapacity": 60.0,
+  "powerProduction": 60.0,
+  "heating": 0.006,
+  "coolantPower": 0.1,
+  "explosionShake": 4.0,
+  "explosionScorchSize": 18,
+  "explosionIgnitionChance": 0.5,
+  "explosionFireballs": 11,
+  "ambientSound": "loopThoriumReactor",
+  "ambientSoundVolume": 0.11,
+  "consumes": {
+    "items": [
+      {
+        "item": "cobalt-60",
+        "amount": 1
+      }
+    ],
+    "liquid": {
+      "liquid": "liquidSodium",
+      "amount": 0.06,
+      "update": false
+    }
+  },
+  "requirements": [
+    { "item": "cobalt", "amount": 150 },
+    { "item": "chromium", "amount": 120 },
+    { "item": "aluminum", "amount": 150 },
+    { "item": "silicon", "amount": 120 },
+    { "item": "cadmium", "amount": 80 }
+  ],
+  "category": "power",
+  "research": "hydrogenGenerator"
+}
