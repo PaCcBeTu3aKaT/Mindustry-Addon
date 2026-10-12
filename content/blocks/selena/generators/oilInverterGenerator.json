@@ -1,0 +1,26 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Нефтяной инверторный генератор",
+  "description": "Версия инверторного генератора на нефти.",
+  "size": 2,
+  "health": 260,
+  "powerProduction": 4,
+  "hasLiquids": true,
+  "liquidCapacity": 30,
+  "generateEffect": "generatespark",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.04,
+  "consumes": {
+    "liquid": {
+      "liquid": "oil",
+      "amount": 0.1
+    }
+  },
+  "requirements": [
+    { "item": "bronze", "amount": 45 },
+    { "item": "cadmium", "amount": 45 },
+    { "item": "tin", "amount": 55 }
+  ],
+  "category": "power",
+  "research": "inverterGenerator"
+}
