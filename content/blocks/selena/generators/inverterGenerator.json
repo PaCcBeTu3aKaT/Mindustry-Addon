@@ -1,0 +1,27 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Инверторный генератор",
+  "description": "Универсальная неприхотливая рабочая лошадка начального и среднего этапов. Эта версия сжигает уголь. Для газа и нефти есть версии с жидким топливом.",
+  "size": 2,
+  "health": 260,
+  "powerProduction": 3.0,
+  "itemDuration": 90.0,
+  "hasItems": true,
+  "generateEffect": "generatespark",
+  "ambientSound": "loopSmelter",
+  "ambientSoundVolume": 0.04,
+  "consumes": {
+    "items": [
+      {
+        "item": "coal",
+        "amount": 1
+      }
+    ]
+  },
+  "requirements": [
+    { "item": "tin", "amount": 30 },
+    { "item": "cadmium", "amount": 25 }
+  ],
+  "category": "power",
+  "research": "outpost"
+}
