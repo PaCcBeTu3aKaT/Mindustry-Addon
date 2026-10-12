@@ -24,7 +24,6 @@
     { "item": "cadmium", "amount": 45 },
     { "item": "tin", "amount": 55 }
   ],
-  ],
   "category": "power",
   "research": "inverterGenerator"
 }
