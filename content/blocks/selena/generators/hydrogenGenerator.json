@@ -23,5 +23,5 @@
     { "item": "silicon", "amount": 60 }
   ],
   "category": "power",
-  "research": "osmoticGenerator"
+  "research": "hydroGenerator"
 }
