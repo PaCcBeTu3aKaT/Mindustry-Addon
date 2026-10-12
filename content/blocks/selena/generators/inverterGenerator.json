@@ -12,10 +12,7 @@
   "ambientSoundVolume": 0.04,
   "consumes": {
     "items": [
-      {
-        "item": "coal",
-        "amount": 1
-      }
+      { "item": "coal", "amount": 1 }
     ]
   },
   "requirements": [
