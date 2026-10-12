@@ -16,9 +16,7 @@
     "items": [
       { "item": "sand", "amount": 1 }
     ],
-    "liquid": {
-      "liquid": "water", "amount": 0.12
-    }
+    "liquid": { "liquid": "water", "amount": 0.12 }
   },
   "requirements": [
     { "item": "metaglass", "amount": 45 },
