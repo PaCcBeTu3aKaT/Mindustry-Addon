@@ -17,18 +17,9 @@
     }
   },
   "requirements": [
-    {
-      "item": "bronze",
-      "amount": 45
-    },
-    {
-      "item": "cadmium",
-      "amount": 45
-    },
-    {
-      "item": "tin",
-      "amount": 55
-    }
+    { "item": "bronze", "amount": 45 },
+    { "item": "cadmium", "amount": 45 },
+    { "item": "tin", "amount": 55 }
   ],
   "category": "power",
   "research": "inverterGenerator"
