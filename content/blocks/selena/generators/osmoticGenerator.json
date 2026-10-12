@@ -1,0 +1,32 @@
+{
+  "type": "ConsumeGenerator",
+  "name": "Осмотический генератор",
+  "description": "Экологичный генератор, работающий за счёт выравнивания концентраций и осмотического давления жидкости. Расходует песок и воду. Хорош там, где много воды и песка, но мало горючих ископаемых.",
+  "size": 2,
+  "health": 300,
+  "powerProduction": 4,
+  "itemDuration": 120.0,
+  "hasItems": true,
+  "hasLiquids": true,
+  "liquidCapacity": 30.0,
+  "generateEffect": "generatespark",
+  "ambientSound": "loopHum",
+  "ambientSoundVolume": 0.04,
+  "consumes": {
+    "items": [
+      { "item": "sand", "amount": 1 }
+    ],
+    "liquid": {
+      "liquid": "water", "amount": 0.12
+    }
+  },
+  "requirements": [
+    { "item": "metaglass", "amount": 45 },
+    { "item": "bronze", "amount": 45 },
+    { "item": "cadmium", "amount": 45 },
+    { "item": "tin", "amount": 55 }
+  ],
+  ],
+  "category": "power",
+  "research": "inverterGenerator"
+}
