@@ -12,11 +12,11 @@
   "ambientSoundVolume": 0.04,
   "consumes": {
     "liquid": {
-      "liquid": "oil",
-      "amount": 0.1
+      "liquid": "oil", "amount": 0.1
     }
   },
   "requirements": [
+    { "item": "aluminum", "amount": 45 },
     { "item": "bronze", "amount": 45 },
     { "item": "cadmium", "amount": 45 },
     { "item": "tin", "amount": 55 }
