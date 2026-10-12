@@ -12,7 +12,8 @@
   "ambientSoundVolume": 0.04,
   "consumes": {
     "liquid": {
-      "liquid": "naturalGas", "amount": 0.08 }
+      "liquid": "naturalGas", "amount": 0.08
+    }
   },
   "requirements": [
     { "item": "bronze", "amount": 45 },
