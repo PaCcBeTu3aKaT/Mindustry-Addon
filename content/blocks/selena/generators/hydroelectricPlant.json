@@ -1,0 +1,27 @@
+{
+  "type": "ThermalGenerator",
+  "name": "Гидроэлектростанция",
+  "description": "Массивная высокотехнологичная постройка для питания целых промышленных кластеров без расходуемого топлива. Устанавливается строго на воду.",
+  "size": 7,
+  "health": 2800,
+  "powerProduction": 32,
+  "displayEfficiencyScale": 0.36,
+  "attribute": "light",
+  "minEfficiency": 0.01,
+  "requiresWater": true,
+  "floating": true,
+  "generateEffect": "generatespark",
+  "effectChance": 0.03,
+  "ambientSound": "loopHum",
+  "ambientSoundVolume": 0.1,
+  "requirements": [
+    { "item": "ferroAlloy", "amount": 120 },
+    { "item": "cobalt", "amount": 150 },
+    { "item": "chromium", "amount": 150 },
+    { "item": "aluminum", "amount": 200 },
+    { "item": "metaglass", "amount": 150 },
+    { "item": "silicon", "amount": 120 }
+  ],
+  "category": "power",
+  "research": "ferroAlloy"
+}
