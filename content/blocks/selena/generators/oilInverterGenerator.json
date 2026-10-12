@@ -11,9 +11,7 @@
   "ambientSound": "loopSmelter",
   "ambientSoundVolume": 0.04,
   "consumes": {
-    "liquid": {
-      "liquid": "oil", "amount": 0.1
-    }
+    "liquid": { "liquid": "oil", "amount": 0.1 }
   },
   "requirements": [
     { "item": "aluminum", "amount": 45 },
