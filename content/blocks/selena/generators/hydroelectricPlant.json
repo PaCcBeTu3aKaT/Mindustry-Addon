@@ -4,7 +4,7 @@
   "description": "Массивная высокотехнологичная постройка для питания целых промышленных кластеров без расходуемого топлива. Устанавливается строго на воду.",
   "size": 7,
   "health": 2800,
-  "powerProduction": 32,
+  "powerProduction": 20,
   "displayEfficiencyScale": 0.36,
   "attribute": "light",
   "minEfficiency": 0.01,
