@@ -9,7 +9,7 @@
   "liquidCapacity": 60.0,
   "explosionRadius": 50
   "explosionDamage": 50000
-  "powerProduction": 100
+  "powerProduction": 30
   "fuelItem": "Cobalt-60"
   "heating": 0.006,
   "coolantPower": 0.1,
